@@ -18,3 +18,9 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python -m fourth_down --check
       - run: python -m compileall -q fourth_down scripts cloud
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: python -m scripts.check_browser_engine
+      - run: python -m scripts.build_site
+      - run: git diff --exit-code -- site/data.js

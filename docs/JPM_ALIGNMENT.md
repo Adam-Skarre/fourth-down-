@@ -13,7 +13,8 @@ Fourth Down is intentionally framed as a **decision system**, not a fantasy-foot
 7. **Evaluate** forecasts walk-forward against simpler baselines using MAE, RMSE, and bias.
 8. **Serve** the calculations through JSON HTTP endpoints to a custom browser interface.
 9. **Test** data contracts, model leakage, optimizer correctness, API behavior, and UI smoke flows.
-10. **Extend** the same normalized contract to optional AWS S3 and Databricks batch examples without pretending those integrations are deployed.
+10. **Extend** the reference workflow with private AWS S3 storage and a replicated Databricks dataset; document the separate execution paths.
+11. **Research** ridge regression across 2022–2024 using chronological model selection, baseline comparisons, and player-cluster bootstrap uncertainty. The larger study runs locally.
 
 ## JPM-style engineering signals
 

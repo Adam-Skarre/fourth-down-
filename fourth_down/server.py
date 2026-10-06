@@ -152,8 +152,12 @@ def make_handler(service: Service):
                     writer.writeheader()
                     writer.writerows(asdict(g) for g in service.repo.games)
                     self.send(200, buffer.getvalue().encode(), 'text/csv; charset=utf-8', 'fourth-down-source.csv')
+                elif parsed.path in {'/', '/index.html', '/site/style.css', '/site/app.js', '/site/engine.js', '/site/data.js', '/app/favicon.svg'}:
+                    name = 'index.html' if parsed.path in {'/', '/index.html'} else parsed.path.lstrip('/')
+                    mime = 'text/html; charset=utf-8' if name.endswith('.html') else 'text/css; charset=utf-8' if name.endswith('.css') else 'image/svg+xml' if name.endswith('.svg') else 'text/javascript; charset=utf-8'
+                    self.send(200, (ROOT / name).read_bytes(), mime)
                 else:
-                    allowed = {'/': ('index.html', 'text/html; charset=utf-8'),
+                    allowed = {'/lab.html': ('index.html', 'text/html; charset=utf-8'),
                                '/index.html': ('index.html', 'text/html; charset=utf-8'),
                                '/championship.html': ('championship.html', 'text/html; charset=utf-8'),
                                '/championship.js': ('championship.js', 'text/javascript; charset=utf-8'),

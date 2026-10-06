@@ -1,0 +1,706 @@
+{
+  "title": "Chronological NFL forecast benchmark",
+  "scoring": "half PPR",
+  "target": "Next observed player-week fantasy points, conditional on recorded outcome and prior-history eligibility",
+  "features": [
+    "history_mean",
+    "recent_weighted",
+    "last_three",
+    "last_game",
+    "recent_sd",
+    "history_count",
+    "RB",
+    "WR",
+    "TE"
+  ],
+  "sources": {
+    "sources": [
+      {
+        "season": 2022,
+        "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2022.csv",
+        "source_sha256": "42f3a4da856546bd9606dde29eecf54e8dbbd6627264bbd8e153dd34ecd0e535",
+        "normalized_sha256": "dbb09f89a2c9be78ee4b7394b5b90c889c02564b338c1434488b1cffb56e79ae",
+        "records": 5252,
+        "players": 575
+      },
+      {
+        "season": 2023,
+        "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2023.csv",
+        "source_sha256": "fc731277c81c7ee25fb6af50cebd29a2adf3f8aadddeec1c485231aa9f98bdcc",
+        "normalized_sha256": "e34fb938dc01d4a476559a133c604631e45f58025f57b666e64441ad56621169",
+        "records": 5294,
+        "players": 545
+      },
+      {
+        "season": 2024,
+        "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2024.csv",
+        "source_sha256": "4f1598c9a6ba396a52e256762a0d9148abd22cdf856f26fc8825fa1d1dc49631",
+        "normalized_sha256": "cb2854786fe61d2059ce607cdc9f2128a72f291ada8e93b542cafc9b10921ad3",
+        "records": 5227,
+        "players": 559
+      }
+    ],
+    "retrieved_on": "2026-10-06",
+    "license": "CC BY 4.0",
+    "attribution": "nflverse contributors",
+    "transformation": "Regular-season QB/RB/WR/TE; normalized scoring fields; no imputation.",
+    "limitations": "Retrospectively retrieved corrected statistics; original publication vintages not reconstructed."
+  },
+  "split": {
+    "train": 2022,
+    "validation": 2023,
+    "evaluation": 2024,
+    "refit": [
+      2022,
+      2023
+    ]
+  },
+  "cohorts": {
+    "2022": {
+      "records": 5252,
+      "predictions": 3442,
+      "players": 437
+    },
+    "2023": {
+      "records": 5294,
+      "predictions": 3583,
+      "players": 426
+    },
+    "2024": {
+      "records": 5227,
+      "predictions": 3503,
+      "players": 420
+    }
+  },
+  "validation": [
+    {
+      "lambda": 0.1,
+      "n": 3583,
+      "mae": 4.4892,
+      "rmse": 5.9806,
+      "bias": -0.0442
+    },
+    {
+      "lambda": 1.0,
+      "n": 3583,
+      "mae": 4.4891,
+      "rmse": 5.9805,
+      "bias": -0.0441
+    },
+    {
+      "lambda": 10.0,
+      "n": 3583,
+      "mae": 4.4883,
+      "rmse": 5.9795,
+      "bias": -0.0435
+    },
+    {
+      "lambda": 100.0,
+      "n": 3583,
+      "mae": 4.4937,
+      "rmse": 5.9826,
+      "bias": -0.0424
+    },
+    {
+      "lambda": 1000.0,
+      "n": 3583,
+      "mae": 4.5578,
+      "rmse": 6.0257,
+      "bias": -0.0478
+    }
+  ],
+  "selected_lambda": 10.0,
+  "model": {
+    "means": [
+      8.133079600956576,
+      8.223984898601888,
+      8.239636536180308,
+      8.305355160142348,
+      4.391761343791955,
+      7.936085409252669,
+      0.26434163701067614,
+      0.421067615658363,
+      0.19672597864768684
+    ],
+    "scales": [
+      5.287141105515455,
+      5.60416429979157,
+      5.934242962844845,
+      7.475244806463926,
+      2.5094504591698135,
+      3.622435081755211,
+      0.440982013185563,
+      0.49373037044741747,
+      0.3975234181438833
+    ],
+    "coefficients": [
+      8.189010676156585,
+      3.352903748668779,
+      -0.2946432866563838,
+      0.6431653279926253,
+      0.518014299228271,
+      -0.16200092946495087,
+      0.11270507123178095,
+      -0.7326243915055463,
+      -1.0795172920989233,
+      -0.9167939941714056
+    ],
+    "lambda": 10.0
+  },
+  "overall": {
+    "ridge": {
+      "n": 3503,
+      "mae": 4.6284,
+      "rmse": 6.1774,
+      "bias": -0.3281
+    },
+    "blend": {
+      "n": 3503,
+      "mae": 4.6509,
+      "rmse": 6.2988,
+      "bias": -0.2396
+    },
+    "history": {
+      "n": 3503,
+      "mae": 4.6293,
+      "rmse": 6.2845,
+      "bias": -0.4127
+    },
+    "last_game": {
+      "n": 3503,
+      "mae": 5.8374,
+      "rmse": 7.9517,
+      "bias": 0.0704
+    }
+  },
+  "by_position": {
+    "QB": {
+      "ridge": {
+        "n": 425,
+        "mae": 6.2877,
+        "rmse": 8.0614,
+        "bias": -1.0372
+      },
+      "blend": {
+        "n": 425,
+        "mae": 6.4902,
+        "rmse": 8.3248,
+        "bias": -0.8318
+      },
+      "history": {
+        "n": 425,
+        "mae": 6.5077,
+        "rmse": 8.3628,
+        "bias": -1.3549
+      },
+      "last_game": {
+        "n": 425,
+        "mae": 8.0576,
+        "rmse": 10.1757,
+        "bias": 0.1206
+      }
+    },
+    "RB": {
+      "ridge": {
+        "n": 923,
+        "mae": 4.8198,
+        "rmse": 6.169,
+        "bias": 0.1591
+      },
+      "blend": {
+        "n": 923,
+        "mae": 4.7407,
+        "rmse": 6.2697,
+        "bias": 0.1229
+      },
+      "history": {
+        "n": 923,
+        "mae": 4.7966,
+        "rmse": 6.2994,
+        "bias": 0.1317
+      },
+      "last_game": {
+        "n": 923,
+        "mae": 5.7217,
+        "rmse": 7.7744,
+        "bias": 0.16
+      }
+    },
+    "WR": {
+      "ridge": {
+        "n": 1444,
+        "mae": 4.5128,
+        "rmse": 6.136,
+        "bias": -0.4362
+      },
+      "blend": {
+        "n": 1444,
+        "mae": 4.575,
+        "rmse": 6.2413,
+        "bias": -0.1739
+      },
+      "history": {
+        "n": 1444,
+        "mae": 4.5038,
+        "rmse": 6.1796,
+        "bias": -0.3196
+      },
+      "last_game": {
+        "n": 1444,
+        "mae": 5.8623,
+        "rmse": 8.0604,
+        "bias": 0.0816
+      }
+    },
+    "TE": {
+      "ridge": {
+        "n": 711,
+        "mae": 3.6226,
+        "rmse": 4.8263,
+        "bias": -0.3175
+      },
+      "blend": {
+        "n": 711,
+        "mae": 3.5889,
+        "rmse": 4.8889,
+        "bias": -0.4897
+      },
+      "history": {
+        "n": 711,
+        "mae": 3.5443,
+        "rmse": 4.8693,
+        "bias": -0.7453
+      },
+      "last_game": {
+        "n": 711,
+        "mae": 4.6099,
+        "rmse": 6.2622,
+        "bias": -0.0987
+      }
+    }
+  },
+  "by_week": [
+    {
+      "week": 4,
+      "ridge": {
+        "n": 194,
+        "mae": 4.6325,
+        "rmse": 6.0696,
+        "bias": -0.2203
+      },
+      "blend": {
+        "n": 194,
+        "mae": 4.7928,
+        "rmse": 6.3101,
+        "bias": 0.0751
+      },
+      "history": {
+        "n": 194,
+        "mae": 4.7346,
+        "rmse": 6.273,
+        "bias": -0.0086
+      },
+      "last_game": {
+        "n": 194,
+        "mae": 6.2304,
+        "rmse": 8.278,
+        "bias": 0.7801
+      }
+    },
+    {
+      "week": 5,
+      "ridge": {
+        "n": 194,
+        "mae": 4.8318,
+        "rmse": 6.6094,
+        "bias": -1.3015
+      },
+      "blend": {
+        "n": 194,
+        "mae": 5.097,
+        "rmse": 6.8875,
+        "bias": -1.1469
+      },
+      "history": {
+        "n": 194,
+        "mae": 5.0561,
+        "rmse": 6.872,
+        "bias": -1.2322
+      },
+      "last_game": {
+        "n": 194,
+        "mae": 6.0671,
+        "rmse": 8.0373,
+        "bias": -0.9966
+      }
+    },
+    {
+      "week": 6,
+      "ridge": {
+        "n": 212,
+        "mae": 4.8168,
+        "rmse": 6.014,
+        "bias": -0.3307
+      },
+      "blend": {
+        "n": 212,
+        "mae": 5.0386,
+        "rmse": 6.3077,
+        "bias": -0.1535
+      },
+      "history": {
+        "n": 212,
+        "mae": 4.9849,
+        "rmse": 6.2557,
+        "bias": -0.3214
+      },
+      "last_game": {
+        "n": 212,
+        "mae": 6.2073,
+        "rmse": 8.1775,
+        "bias": 0.5595
+      }
+    },
+    {
+      "week": 7,
+      "ridge": {
+        "n": 220,
+        "mae": 4.7836,
+        "rmse": 5.9864,
+        "bias": 0.4554
+      },
+      "blend": {
+        "n": 220,
+        "mae": 4.8225,
+        "rmse": 6.1035,
+        "bias": 0.6064
+      },
+      "history": {
+        "n": 220,
+        "mae": 4.7824,
+        "rmse": 6.1097,
+        "bias": 0.4776
+      },
+      "last_game": {
+        "n": 220,
+        "mae": 6.1546,
+        "rmse": 7.9467,
+        "bias": 1.0663
+      }
+    },
+    {
+      "week": 8,
+      "ridge": {
+        "n": 255,
+        "mae": 4.7988,
+        "rmse": 6.2984,
+        "bias": -1.0049
+      },
+      "blend": {
+        "n": 255,
+        "mae": 4.8223,
+        "rmse": 6.4451,
+        "bias": -0.9156
+      },
+      "history": {
+        "n": 255,
+        "mae": 4.7813,
+        "rmse": 6.4522,
+        "bias": -1.012
+      },
+      "last_game": {
+        "n": 255,
+        "mae": 6.1776,
+        "rmse": 8.1193,
+        "bias": -1.2049
+      }
+    },
+    {
+      "week": 9,
+      "ridge": {
+        "n": 240,
+        "mae": 4.4315,
+        "rmse": 5.8372,
+        "bias": -0.4687
+      },
+      "blend": {
+        "n": 240,
+        "mae": 4.4918,
+        "rmse": 5.931,
+        "bias": -0.335
+      },
+      "history": {
+        "n": 240,
+        "mae": 4.413,
+        "rmse": 5.8723,
+        "bias": -0.5278
+      },
+      "last_game": {
+        "n": 240,
+        "mae": 5.5755,
+        "rmse": 7.4773,
+        "bias": 0.434
+      }
+    },
+    {
+      "week": 10,
+      "ridge": {
+        "n": 222,
+        "mae": 4.2687,
+        "rmse": 5.8413,
+        "bias": 0.7646
+      },
+      "blend": {
+        "n": 222,
+        "mae": 4.4245,
+        "rmse": 6.0053,
+        "bias": 0.9434
+      },
+      "history": {
+        "n": 222,
+        "mae": 4.3597,
+        "rmse": 5.9282,
+        "bias": 0.6957
+      },
+      "last_game": {
+        "n": 222,
+        "mae": 5.8006,
+        "rmse": 8.1387,
+        "bias": 1.4098
+      }
+    },
+    {
+      "week": 11,
+      "ridge": {
+        "n": 236,
+        "mae": 4.9448,
+        "rmse": 6.6088,
+        "bias": -0.5832
+      },
+      "blend": {
+        "n": 236,
+        "mae": 4.8829,
+        "rmse": 6.6607,
+        "bias": -0.5412
+      },
+      "history": {
+        "n": 236,
+        "mae": 4.8771,
+        "rmse": 6.645,
+        "bias": -0.5952
+      },
+      "last_game": {
+        "n": 236,
+        "mae": 5.936,
+        "rmse": 8.1445,
+        "bias": -1.227
+      }
+    },
+    {
+      "week": 12,
+      "ridge": {
+        "n": 223,
+        "mae": 4.4242,
+        "rmse": 5.9327,
+        "bias": -0.2077
+      },
+      "blend": {
+        "n": 223,
+        "mae": 4.3767,
+        "rmse": 6.0274,
+        "bias": -0.1738
+      },
+      "history": {
+        "n": 223,
+        "mae": 4.4385,
+        "rmse": 6.081,
+        "bias": -0.3096
+      },
+      "last_game": {
+        "n": 223,
+        "mae": 5.7428,
+        "rmse": 7.6363,
+        "bias": 0.4689
+      }
+    },
+    {
+      "week": 13,
+      "ridge": {
+        "n": 257,
+        "mae": 4.2986,
+        "rmse": 5.7844,
+        "bias": -0.4112
+      },
+      "blend": {
+        "n": 257,
+        "mae": 4.2135,
+        "rmse": 5.8014,
+        "bias": -0.2697
+      },
+      "history": {
+        "n": 257,
+        "mae": 4.3084,
+        "rmse": 5.9813,
+        "bias": -0.4279
+      },
+      "last_game": {
+        "n": 257,
+        "mae": 5.1792,
+        "rmse": 7.337,
+        "bias": -0.0706
+      }
+    },
+    {
+      "week": 14,
+      "ridge": {
+        "n": 209,
+        "mae": 4.773,
+        "rmse": 6.738,
+        "bias": -0.9702
+      },
+      "blend": {
+        "n": 209,
+        "mae": 4.5911,
+        "rmse": 6.6488,
+        "bias": -0.8851
+      },
+      "history": {
+        "n": 209,
+        "mae": 4.5255,
+        "rmse": 6.6348,
+        "bias": -1.1214
+      },
+      "last_game": {
+        "n": 209,
+        "mae": 5.9742,
+        "rmse": 8.4387,
+        "bias": -0.6595
+      }
+    },
+    {
+      "week": 15,
+      "ridge": {
+        "n": 266,
+        "mae": 4.7093,
+        "rmse": 6.3398,
+        "bias": 0.5558
+      },
+      "blend": {
+        "n": 266,
+        "mae": 4.6672,
+        "rmse": 6.4522,
+        "bias": 0.6634
+      },
+      "history": {
+        "n": 266,
+        "mae": 4.6413,
+        "rmse": 6.3631,
+        "bias": 0.384
+      },
+      "last_game": {
+        "n": 266,
+        "mae": 5.8683,
+        "rmse": 8.1111,
+        "bias": 1.4266
+      }
+    },
+    {
+      "week": 16,
+      "ridge": {
+        "n": 259,
+        "mae": 4.4148,
+        "rmse": 5.8254,
+        "bias": -0.4985
+      },
+      "blend": {
+        "n": 259,
+        "mae": 4.4579,
+        "rmse": 5.9726,
+        "bias": -0.4281
+      },
+      "history": {
+        "n": 259,
+        "mae": 4.303,
+        "rmse": 5.8241,
+        "bias": -0.6284
+      },
+      "last_game": {
+        "n": 259,
+        "mae": 5.818,
+        "rmse": 7.9219,
+        "bias": -0.5276
+      }
+    },
+    {
+      "week": 17,
+      "ridge": {
+        "n": 267,
+        "mae": 4.8013,
+        "rmse": 6.4345,
+        "bias": -0.4685
+      },
+      "blend": {
+        "n": 267,
+        "mae": 4.6187,
+        "rmse": 6.4173,
+        "bias": -0.5406
+      },
+      "history": {
+        "n": 267,
+        "mae": 4.7332,
+        "rmse": 6.4729,
+        "bias": -0.778
+      },
+      "last_game": {
+        "n": 267,
+        "mae": 5.4041,
+        "rmse": 7.6358,
+        "bias": -0.3004
+      }
+    },
+    {
+      "week": 18,
+      "ridge": {
+        "n": 249,
+        "mae": 4.5572,
+        "rmse": 6.2906,
+        "bias": -0.3478
+      },
+      "blend": {
+        "n": 249,
+        "mae": 4.6356,
+        "rmse": 6.5283,
+        "bias": -0.5153
+      },
+      "history": {
+        "n": 249,
+        "mae": 4.6396,
+        "rmse": 6.5085,
+        "bias": -0.761
+      },
+      "last_game": {
+        "n": 249,
+        "mae": 5.7016,
+        "rmse": 8.0073,
+        "bias": 0.0158
+      }
+    }
+  ],
+  "uncertainty": {
+    "method": "Paired player-cluster bootstrap, percentile interval",
+    "repeats": 1000,
+    "seed": 42,
+    "clusters": 420,
+    "lower": -0.0464,
+    "upper": 0.0472,
+    "quantity": "MAE ridge minus MAE history; negative favors ridge",
+    "limitation": "Conditional on sampled players; does not capture common weekly shocks or model-selection uncertainty."
+  },
+  "limitations": [
+    "Retrospective study; design and split were chosen after the seasons occurred. This is not a prospective or preregistered validation.",
+    "Missing target outcomes are not zero-filled. Evaluation is conditional on recorded player appearances, at least three prior games, and a prior observation within two weeks.",
+    "No live injury feed, snap counts, opponent adjustments or league ownership. No claim of professional-projection superiority or realized lineup gains.",
+    "The fitted model is a research benchmark. The interactive lineup replay continues using its documented 65/35 heuristic.",
+    "AWS and Databricks verification covers the original 164-row reference, not this expanded local benchmark."
+  ]
+}

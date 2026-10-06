@@ -1,5 +1,7 @@
 # Model card — recency blend v1
 
+This document describes the original 164-record decision lab and its API-backed interface. The portfolio now also includes a separate trained, three-season ridge-regression study; see [research methodology](RESEARCH.md) and the [current README](../README.md). Current cloud execution evidence is recorded in [cloud status](../reports/cloud_setup_status.json).
+
 ## Intended use
 
 A local educational/portfolio replay of one-week fantasy lineup and one-for-one pickup decisions. It demonstrates data contracts, temporal feature construction, constraint optimization and transparent evaluation. It is not live fantasy advice, a wagering system, a medical assessment of athletes, or a trained ML product.

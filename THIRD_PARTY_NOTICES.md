@@ -41,3 +41,11 @@ NFL, AWS, Databricks and all other third-party names identify data or integratio
 ## 2025 case-study statistics
 
 The separately identified 2025 data are transcribed published quantitative player statistics, credited row-cohort by row-cohort in `data/championship_2025/manifest.json`. PPR/reception values are credited to StatMuse; week labels and box-score references to NFL.com. This code license does not license third-party websites or branding. No player photographs or league logos are bundled in this extension. Source facts are not generated or simulated.
+
+## Expanded 2022–2024 forecast study
+
+The research CSVs were normalized directly from the official `nflverse/nflverse-data` player_stats release assets. Exact source URLs and hashes are preserved in `data/research/manifest.json`. Attribution: nflverse contributors, CC BY 4.0. Transformations retain regular-season QB/RB/WR/TE records and selected identity/scoring columns; no outcomes are imputed.
+
+## Visual reference
+
+Firecrawl's fantasy page (https://www.firecrawl.dev/alexandria/fantasy) informed the restrained typography, warm accent color, and task-oriented flow. Fourth Down uses original HTML, CSS, SVG and JavaScript; no Firecrawl brand assets, source code, or data services are incorporated.

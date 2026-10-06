@@ -1,30 +1,17 @@
 # Résumé wording
 
-Use this entry after running, reviewing and understanding the project. Replace “GitHub” with a link only after the repository is actually published. Do not fabricate dates or institutional sponsorship.
+Use only after reviewing the code and being able to explain your own contribution to this AI-assisted project. Do not invent dates or affiliation.
 
-**Fourth Down — Fantasy Football Lineup Analytics | Python, SQL, JavaScript**  
-*Independent Technical Project | GitHub*
+**Fourth Down — Predictive Analytics & Decision Optimization | Python, SQL, JavaScript, AWS S3, Databricks**
 
-- Developed a Python/SQL fantasy-football application with validated data ingestion and an interactive JavaScript interface.
-- Implemented exact lineup optimization and pickup-impact analysis under position, roster and player-uniqueness constraints.
-- Built chronological backtests and 103 automated unit/API tests covering scoring, data quality and look-ahead leakage.
+*Independent Project | [Live demo](https://adam-skarre.github.io/fourth-down-/) | [GitHub](https://github.com/Adam-Skarre/fourth-down-)*
 
-## Optional cloud-focused replacement bullet
+- Evaluated ridge regression against three forecasting baselines on 15,773 historical records using chronological training, model selection, and 3,503 evaluation forecasts.
+- Built an interactive lineup optimizer and scenario-analysis interface; validated behavior with 109 unit/API/research tests and 78 browser/Python optimizer comparisons.
+- Stored reference data and outputs in private, versioned AWS S3 storage and processed a replicated dataset in Databricks with PySpark and Delta tables.
 
-Use this instead of the third bullet only when you can explain the included extension and its execution status:
+## Explain the evidence
 
-- Authored an AWS S3 upload adapter and a Databricks/PySpark batch notebook for validated historical data and projection outputs.
+Ridge reduced RMSE relative to history average; MAE was effectively tied and its paired bootstrap interval crossed zero. Do not claim a proven forecasting advantage, actual league gains, or a model-caused championship.
 
-“Authored an adapter/notebook” does not mean “deployed and operated a cloud pipeline.” The S3 client contract was tested locally; the cloud notebook was syntax checked. Actual AWS and Databricks execution was not performed for this deliverable.
-
-## Do not claim
-
-No UConn class or professor affiliation; no production deployment; no active fantasy users; no neural-network or production-ML claim; no proven forecasting edge; no current NFL injury integration; no source-wide data volume larger than what you actually imported. The original replay contains 164 historical records for 14 players. The separate 2025 diagnostic adds 64 records for four running backs; do not describe that subset as a complete championship-season reconstruction. The project was assembled with AI assistance, so attribute your personal work accurately in an interview.
-
-## 2025 research-case bullet
-
-Use only after reviewing, running, and being able to explain the code and your own contribution:
-
-- Evaluated fantasy-football forecasts with Python/SQL, chronological backtests, baseline comparisons and a championship-roster case study.
-
-The championship is historical context, not a measured software outcome. The original model has lower RMSE but not lower MAE than the history-mean baseline in the small 2025 diagnostic. Do not replace that mixed result with a fabricated win rate or causal championship claim.
+The larger study ran locally. AWS holds four reference artifacts. Databricks processed the 164-record reference dataset and its final PASS was reported by the user; the runtime export has not yet been collected. No direct S3-to-Databricks connection or automated production pipeline is claimed. See [cloud status](../reports/cloud_setup_status.json).

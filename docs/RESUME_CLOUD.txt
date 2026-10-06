@@ -3,6 +3,6 @@ Independent Project | Python, SQL, AWS S3, Databricks, PySpark
 
 - Built a Python/SQL application to forecast fantasy points, optimize seven-player lineups, and evaluate roster changes.
 - Stored historical data and analysis outputs in private, versioned AWS S3 storage; processed a replicated dataset in Databricks using PySpark and Delta tables.
-- Verified 14 Databricks forecasts against local Python results and validated application logic with 103 automated tests.
+- Verified 14 Databricks forecasts against local Python results and validated application logic with 109 automated unit/API/research tests.
 
 Use wording only insofar as it accurately represents your contribution, including AI-assisted development. Cloud execution: AWS console uploads verified by the assistant; Databricks final PASS reported by the user. No direct S3-to-Databricks connection, automated cloud ingestion, production deployment, or proven forecasting advantage is claimed.

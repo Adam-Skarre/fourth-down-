@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "season": 2022,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2022.csv",
+      "source_sha256": "42f3a4da856546bd9606dde29eecf54e8dbbd6627264bbd8e153dd34ecd0e535",
+      "normalized_sha256": "dbb09f89a2c9be78ee4b7394b5b90c889c02564b338c1434488b1cffb56e79ae",
+      "records": 5252,
+      "players": 575
+    },
+    {
+      "season": 2023,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2023.csv",
+      "source_sha256": "fc731277c81c7ee25fb6af50cebd29a2adf3f8aadddeec1c485231aa9f98bdcc",
+      "normalized_sha256": "e34fb938dc01d4a476559a133c604631e45f58025f57b666e64441ad56621169",
+      "records": 5294,
+      "players": 545
+    },
+    {
+      "season": 2024,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2024.csv",
+      "source_sha256": "4f1598c9a6ba396a52e256762a0d9148abd22cdf856f26fc8825fa1d1dc49631",
+      "normalized_sha256": "cb2854786fe61d2059ce607cdc9f2128a72f291ada8e93b542cafc9b10921ad3",
+      "records": 5227,
+      "players": 559
+    }
+  ],
+  "retrieved_on": "2026-10-06",
+  "license": "CC BY 4.0",
+  "attribution": "nflverse contributors",
+  "transformation": "Regular-season QB/RB/WR/TE; normalized scoring fields; no imputation.",
+  "limitations": "Retrospectively retrieved corrected statistics; original publication vintages not reconstructed."
+}

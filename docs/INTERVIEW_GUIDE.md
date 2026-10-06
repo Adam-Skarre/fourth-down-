@@ -1,5 +1,7 @@
 # Explain the code, not the buzzwords
 
+This document describes the original 164-record decision lab and its API-backed interface. The portfolio now also includes a separate trained, three-season ridge-regression study; see [research methodology](RESEARCH.md) and the [current README](../README.md). Current cloud execution evidence is recorded in [cloud status](../reports/cloud_setup_status.json).
+
 ## A clear project description
 
 “Fourth Down is a fantasy-football lineup lab. It answers a specific question: does a one-player pickup improve my legal starting lineup? I separated validated historical data, pre-week projections, exact roster optimization, and the interface so the recommendation can be inspected and tested.”

@@ -16,7 +16,7 @@ from urllib.error import URLError
 from urllib.request import Request, urlopen
 from fourth_down.data import DataError, number, integer, validate_rows, write_games
 
-SOURCE = 'https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week.csv'
+SOURCE = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2024.csv'
 MAX_BYTES = 100_000_000
 
 
