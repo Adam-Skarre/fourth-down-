@@ -95,13 +95,34 @@ def build_report(directory=None):
     def score(rs):
         return {method: metrics([(r[method], r['actual']) for r in rs]) for method in ('ridge', 'blend', 'history', 'last_game')}
     report = {'title': 'Chronological NFL forecast benchmark', 'scoring': 'half PPR', 'target': 'Next observed player-week fantasy points, conditional on recorded outcome and prior-history eligibility', 'features': FEATURES, 'sources': manifest, 'split': {'train': 2022, 'validation': 2023, 'evaluation': 2024, 'refit': [2022, 2023]}, 'cohorts': {str(y): {'records': len(seasons[y]), 'predictions': len(rows[y]), 'players': len({r['id'] for r in rows[y]})} for y in seasons}, 'validation': validation, 'selected_lambda': choice, 'model': model, 'overall': score(evaluated), 'by_position': {p: score([r for r in evaluated if r['position'] == p]) for p in ('QB', 'RB', 'WR', 'TE')}, 'by_week': [{'week': w, **score([r for r in evaluated if r['week'] == w])} for w in sorted({r['week'] for r in evaluated})], 'uncertainty': bootstrap(evaluated), 'limitations': ['Retrospective study; design and split were chosen after the seasons occurred. This is not a prospective or preregistered validation.', 'Missing target outcomes are not zero-filled. Evaluation is conditional on recorded player appearances, at least three prior games, and a prior observation within two weeks.', 'No live injury feed, snap counts, opponent adjustments or league ownership. No claim of professional-projection superiority or realized lineup gains.', 'The fitted model is a research benchmark. The interactive lineup replay continues using its documented 65/35 heuristic.', 'AWS and Databricks verification covers the original 164-row reference, not this expanded local benchmark.']}
+    report['season_results'] = {}
+    report['additional_predictions'] = []
+    for year in sorted(y for y in seasons if y >= 2024):
+        rs = [dict(r, ridge=predict(model, r['x'])) for r in rows[year]]
+        report['season_results'][str(year)] = {
+            'season': year, 'first_week': min(g.week for g in seasons[year]),
+            'last_week': max(g.week for g in seasons[year]),
+            'partial': year == 2026, 'overall': score(rs),
+            'players': len({r['id'] for r in rs}),
+            'by_position': {p: score([r for r in rs if r['position'] == p]) for p in ('QB', 'RB', 'WR', 'TE')},
+            'by_week': [{'week': w, **score([r for r in rs if r['week'] == w])} for w in sorted({r['week'] for r in rs})],
+            'uncertainty': bootstrap(rs) if rs else None,
+        }
+        if year > 2024:
+            report['additional_predictions'].extend(rs)
+    report['extension_protocol'] = 'Freeze the 2022–2023 fitted model and selected lambda; evaluate 2025 and available 2026 without refitting or selecting on their outcomes. Retrospective extension, not prospective validation. 2026 is partial and source coverage can change.'
     return (report, evaluated)
 if __name__ == '__main__':
     report, rows = build_report()
+    additional = report.pop('additional_predictions')
     (ROOT / 'reports/research.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
     fields = ['id', 'name', 'position', 'season', 'week', 'history_end', 'actual', 'ridge', 'blend', 'history', 'last_game']
     with (ROOT / 'reports/research_predictions.csv').open('w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction='ignore')
         writer.writeheader()
         writer.writerows(rows)
+    with (ROOT / 'reports/research_extension_predictions.csv').open('w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fields, extrasaction='ignore')
+        writer.writeheader()
+        writer.writerows(additional)
     print(json.dumps({'cohorts': report['cohorts'], 'lambda': report['selected_lambda'], 'metrics': report['overall'], 'uncertainty': report['uncertainty']}, indent=2))

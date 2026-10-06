@@ -38,6 +38,30 @@
         "normalized_sha256": "cb2854786fe61d2059ce607cdc9f2128a72f291ada8e93b542cafc9b10921ad3",
         "records": 5227,
         "players": 559
+      },
+      {
+        "season": 2025,
+        "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv",
+        "source_sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+        "normalized_sha256": "67f09cf6eba3fda0981f278cec5182ff5d9c5e8830f443d60d22442491635062",
+        "records": 6037,
+        "players": 610,
+        "first_week": 1,
+        "last_week": 18,
+        "retrieved_on": "2026-10-06",
+        "status": "completed regular season"
+      },
+      {
+        "season": 2026,
+        "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+        "source_sha256": "81c5bcc263d7b04289c3bfb19e1ae510c289d91fc626a3a33169c0f073aceb6f",
+        "normalized_sha256": "a4cd4cf014168e4190e7eaf9ae08b8d50895237bec05fee32f50d1fd5db408a2",
+        "records": 1436,
+        "players": 474,
+        "first_week": 1,
+        "last_week": 4,
+        "retrieved_on": "2026-10-06",
+        "status": "partial season"
       }
     ],
     "retrieved_on": "2026-10-06",
@@ -70,6 +94,16 @@
       "records": 5227,
       "predictions": 3503,
       "players": 420
+    },
+    "2025": {
+      "records": 6037,
+      "predictions": 4109,
+      "players": 496
+    },
+    "2026": {
+      "records": 1436,
+      "predictions": 235,
+      "players": 235
     }
   },
   "validation": [
@@ -702,5 +736,1298 @@
     "No live injury feed, snap counts, opponent adjustments or league ownership. No claim of professional-projection superiority or realized lineup gains.",
     "The fitted model is a research benchmark. The interactive lineup replay continues using its documented 65/35 heuristic.",
     "AWS and Databricks verification covers the original 164-row reference, not this expanded local benchmark."
-  ]
+  ],
+  "season_results": {
+    "2024": {
+      "season": 2024,
+      "first_week": 1,
+      "last_week": 18,
+      "partial": false,
+      "overall": {
+        "ridge": {
+          "n": 3503,
+          "mae": 4.6284,
+          "rmse": 6.1774,
+          "bias": -0.3281
+        },
+        "blend": {
+          "n": 3503,
+          "mae": 4.6509,
+          "rmse": 6.2988,
+          "bias": -0.2396
+        },
+        "history": {
+          "n": 3503,
+          "mae": 4.6293,
+          "rmse": 6.2845,
+          "bias": -0.4127
+        },
+        "last_game": {
+          "n": 3503,
+          "mae": 5.8374,
+          "rmse": 7.9517,
+          "bias": 0.0704
+        }
+      },
+      "players": 420,
+      "by_position": {
+        "QB": {
+          "ridge": {
+            "n": 425,
+            "mae": 6.2877,
+            "rmse": 8.0614,
+            "bias": -1.0372
+          },
+          "blend": {
+            "n": 425,
+            "mae": 6.4902,
+            "rmse": 8.3248,
+            "bias": -0.8318
+          },
+          "history": {
+            "n": 425,
+            "mae": 6.5077,
+            "rmse": 8.3628,
+            "bias": -1.3549
+          },
+          "last_game": {
+            "n": 425,
+            "mae": 8.0576,
+            "rmse": 10.1757,
+            "bias": 0.1206
+          }
+        },
+        "RB": {
+          "ridge": {
+            "n": 923,
+            "mae": 4.8198,
+            "rmse": 6.169,
+            "bias": 0.1591
+          },
+          "blend": {
+            "n": 923,
+            "mae": 4.7407,
+            "rmse": 6.2697,
+            "bias": 0.1229
+          },
+          "history": {
+            "n": 923,
+            "mae": 4.7966,
+            "rmse": 6.2994,
+            "bias": 0.1317
+          },
+          "last_game": {
+            "n": 923,
+            "mae": 5.7217,
+            "rmse": 7.7744,
+            "bias": 0.16
+          }
+        },
+        "WR": {
+          "ridge": {
+            "n": 1444,
+            "mae": 4.5128,
+            "rmse": 6.136,
+            "bias": -0.4362
+          },
+          "blend": {
+            "n": 1444,
+            "mae": 4.575,
+            "rmse": 6.2413,
+            "bias": -0.1739
+          },
+          "history": {
+            "n": 1444,
+            "mae": 4.5038,
+            "rmse": 6.1796,
+            "bias": -0.3196
+          },
+          "last_game": {
+            "n": 1444,
+            "mae": 5.8623,
+            "rmse": 8.0604,
+            "bias": 0.0816
+          }
+        },
+        "TE": {
+          "ridge": {
+            "n": 711,
+            "mae": 3.6226,
+            "rmse": 4.8263,
+            "bias": -0.3175
+          },
+          "blend": {
+            "n": 711,
+            "mae": 3.5889,
+            "rmse": 4.8889,
+            "bias": -0.4897
+          },
+          "history": {
+            "n": 711,
+            "mae": 3.5443,
+            "rmse": 4.8693,
+            "bias": -0.7453
+          },
+          "last_game": {
+            "n": 711,
+            "mae": 4.6099,
+            "rmse": 6.2622,
+            "bias": -0.0987
+          }
+        }
+      },
+      "by_week": [
+        {
+          "week": 4,
+          "ridge": {
+            "n": 194,
+            "mae": 4.6325,
+            "rmse": 6.0696,
+            "bias": -0.2203
+          },
+          "blend": {
+            "n": 194,
+            "mae": 4.7928,
+            "rmse": 6.3101,
+            "bias": 0.0751
+          },
+          "history": {
+            "n": 194,
+            "mae": 4.7346,
+            "rmse": 6.273,
+            "bias": -0.0086
+          },
+          "last_game": {
+            "n": 194,
+            "mae": 6.2304,
+            "rmse": 8.278,
+            "bias": 0.7801
+          }
+        },
+        {
+          "week": 5,
+          "ridge": {
+            "n": 194,
+            "mae": 4.8318,
+            "rmse": 6.6094,
+            "bias": -1.3015
+          },
+          "blend": {
+            "n": 194,
+            "mae": 5.097,
+            "rmse": 6.8875,
+            "bias": -1.1469
+          },
+          "history": {
+            "n": 194,
+            "mae": 5.0561,
+            "rmse": 6.872,
+            "bias": -1.2322
+          },
+          "last_game": {
+            "n": 194,
+            "mae": 6.0671,
+            "rmse": 8.0373,
+            "bias": -0.9966
+          }
+        },
+        {
+          "week": 6,
+          "ridge": {
+            "n": 212,
+            "mae": 4.8168,
+            "rmse": 6.014,
+            "bias": -0.3307
+          },
+          "blend": {
+            "n": 212,
+            "mae": 5.0386,
+            "rmse": 6.3077,
+            "bias": -0.1535
+          },
+          "history": {
+            "n": 212,
+            "mae": 4.9849,
+            "rmse": 6.2557,
+            "bias": -0.3214
+          },
+          "last_game": {
+            "n": 212,
+            "mae": 6.2073,
+            "rmse": 8.1775,
+            "bias": 0.5595
+          }
+        },
+        {
+          "week": 7,
+          "ridge": {
+            "n": 220,
+            "mae": 4.7836,
+            "rmse": 5.9864,
+            "bias": 0.4554
+          },
+          "blend": {
+            "n": 220,
+            "mae": 4.8225,
+            "rmse": 6.1035,
+            "bias": 0.6064
+          },
+          "history": {
+            "n": 220,
+            "mae": 4.7824,
+            "rmse": 6.1097,
+            "bias": 0.4776
+          },
+          "last_game": {
+            "n": 220,
+            "mae": 6.1546,
+            "rmse": 7.9467,
+            "bias": 1.0663
+          }
+        },
+        {
+          "week": 8,
+          "ridge": {
+            "n": 255,
+            "mae": 4.7988,
+            "rmse": 6.2984,
+            "bias": -1.0049
+          },
+          "blend": {
+            "n": 255,
+            "mae": 4.8223,
+            "rmse": 6.4451,
+            "bias": -0.9156
+          },
+          "history": {
+            "n": 255,
+            "mae": 4.7813,
+            "rmse": 6.4522,
+            "bias": -1.012
+          },
+          "last_game": {
+            "n": 255,
+            "mae": 6.1776,
+            "rmse": 8.1193,
+            "bias": -1.2049
+          }
+        },
+        {
+          "week": 9,
+          "ridge": {
+            "n": 240,
+            "mae": 4.4315,
+            "rmse": 5.8372,
+            "bias": -0.4687
+          },
+          "blend": {
+            "n": 240,
+            "mae": 4.4918,
+            "rmse": 5.931,
+            "bias": -0.335
+          },
+          "history": {
+            "n": 240,
+            "mae": 4.413,
+            "rmse": 5.8723,
+            "bias": -0.5278
+          },
+          "last_game": {
+            "n": 240,
+            "mae": 5.5755,
+            "rmse": 7.4773,
+            "bias": 0.434
+          }
+        },
+        {
+          "week": 10,
+          "ridge": {
+            "n": 222,
+            "mae": 4.2687,
+            "rmse": 5.8413,
+            "bias": 0.7646
+          },
+          "blend": {
+            "n": 222,
+            "mae": 4.4245,
+            "rmse": 6.0053,
+            "bias": 0.9434
+          },
+          "history": {
+            "n": 222,
+            "mae": 4.3597,
+            "rmse": 5.9282,
+            "bias": 0.6957
+          },
+          "last_game": {
+            "n": 222,
+            "mae": 5.8006,
+            "rmse": 8.1387,
+            "bias": 1.4098
+          }
+        },
+        {
+          "week": 11,
+          "ridge": {
+            "n": 236,
+            "mae": 4.9448,
+            "rmse": 6.6088,
+            "bias": -0.5832
+          },
+          "blend": {
+            "n": 236,
+            "mae": 4.8829,
+            "rmse": 6.6607,
+            "bias": -0.5412
+          },
+          "history": {
+            "n": 236,
+            "mae": 4.8771,
+            "rmse": 6.645,
+            "bias": -0.5952
+          },
+          "last_game": {
+            "n": 236,
+            "mae": 5.936,
+            "rmse": 8.1445,
+            "bias": -1.227
+          }
+        },
+        {
+          "week": 12,
+          "ridge": {
+            "n": 223,
+            "mae": 4.4242,
+            "rmse": 5.9327,
+            "bias": -0.2077
+          },
+          "blend": {
+            "n": 223,
+            "mae": 4.3767,
+            "rmse": 6.0274,
+            "bias": -0.1738
+          },
+          "history": {
+            "n": 223,
+            "mae": 4.4385,
+            "rmse": 6.081,
+            "bias": -0.3096
+          },
+          "last_game": {
+            "n": 223,
+            "mae": 5.7428,
+            "rmse": 7.6363,
+            "bias": 0.4689
+          }
+        },
+        {
+          "week": 13,
+          "ridge": {
+            "n": 257,
+            "mae": 4.2986,
+            "rmse": 5.7844,
+            "bias": -0.4112
+          },
+          "blend": {
+            "n": 257,
+            "mae": 4.2135,
+            "rmse": 5.8014,
+            "bias": -0.2697
+          },
+          "history": {
+            "n": 257,
+            "mae": 4.3084,
+            "rmse": 5.9813,
+            "bias": -0.4279
+          },
+          "last_game": {
+            "n": 257,
+            "mae": 5.1792,
+            "rmse": 7.337,
+            "bias": -0.0706
+          }
+        },
+        {
+          "week": 14,
+          "ridge": {
+            "n": 209,
+            "mae": 4.773,
+            "rmse": 6.738,
+            "bias": -0.9702
+          },
+          "blend": {
+            "n": 209,
+            "mae": 4.5911,
+            "rmse": 6.6488,
+            "bias": -0.8851
+          },
+          "history": {
+            "n": 209,
+            "mae": 4.5255,
+            "rmse": 6.6348,
+            "bias": -1.1214
+          },
+          "last_game": {
+            "n": 209,
+            "mae": 5.9742,
+            "rmse": 8.4387,
+            "bias": -0.6595
+          }
+        },
+        {
+          "week": 15,
+          "ridge": {
+            "n": 266,
+            "mae": 4.7093,
+            "rmse": 6.3398,
+            "bias": 0.5558
+          },
+          "blend": {
+            "n": 266,
+            "mae": 4.6672,
+            "rmse": 6.4522,
+            "bias": 0.6634
+          },
+          "history": {
+            "n": 266,
+            "mae": 4.6413,
+            "rmse": 6.3631,
+            "bias": 0.384
+          },
+          "last_game": {
+            "n": 266,
+            "mae": 5.8683,
+            "rmse": 8.1111,
+            "bias": 1.4266
+          }
+        },
+        {
+          "week": 16,
+          "ridge": {
+            "n": 259,
+            "mae": 4.4148,
+            "rmse": 5.8254,
+            "bias": -0.4985
+          },
+          "blend": {
+            "n": 259,
+            "mae": 4.4579,
+            "rmse": 5.9726,
+            "bias": -0.4281
+          },
+          "history": {
+            "n": 259,
+            "mae": 4.303,
+            "rmse": 5.8241,
+            "bias": -0.6284
+          },
+          "last_game": {
+            "n": 259,
+            "mae": 5.818,
+            "rmse": 7.9219,
+            "bias": -0.5276
+          }
+        },
+        {
+          "week": 17,
+          "ridge": {
+            "n": 267,
+            "mae": 4.8013,
+            "rmse": 6.4345,
+            "bias": -0.4685
+          },
+          "blend": {
+            "n": 267,
+            "mae": 4.6187,
+            "rmse": 6.4173,
+            "bias": -0.5406
+          },
+          "history": {
+            "n": 267,
+            "mae": 4.7332,
+            "rmse": 6.4729,
+            "bias": -0.778
+          },
+          "last_game": {
+            "n": 267,
+            "mae": 5.4041,
+            "rmse": 7.6358,
+            "bias": -0.3004
+          }
+        },
+        {
+          "week": 18,
+          "ridge": {
+            "n": 249,
+            "mae": 4.5572,
+            "rmse": 6.2906,
+            "bias": -0.3478
+          },
+          "blend": {
+            "n": 249,
+            "mae": 4.6356,
+            "rmse": 6.5283,
+            "bias": -0.5153
+          },
+          "history": {
+            "n": 249,
+            "mae": 4.6396,
+            "rmse": 6.5085,
+            "bias": -0.761
+          },
+          "last_game": {
+            "n": 249,
+            "mae": 5.7016,
+            "rmse": 8.0073,
+            "bias": 0.0158
+          }
+        }
+      ],
+      "uncertainty": {
+        "method": "Paired player-cluster bootstrap, percentile interval",
+        "repeats": 1000,
+        "seed": 42,
+        "clusters": 420,
+        "lower": -0.0464,
+        "upper": 0.0472,
+        "quantity": "MAE ridge minus MAE history; negative favors ridge",
+        "limitation": "Conditional on sampled players; does not capture common weekly shocks or model-selection uncertainty."
+      }
+    },
+    "2025": {
+      "season": 2025,
+      "first_week": 1,
+      "last_week": 18,
+      "partial": false,
+      "overall": {
+        "ridge": {
+          "n": 4109,
+          "mae": 4.3661,
+          "rmse": 5.9492,
+          "bias": 0.0968
+        },
+        "blend": {
+          "n": 4109,
+          "mae": 4.2412,
+          "rmse": 6.0564,
+          "bias": -0.1302
+        },
+        "history": {
+          "n": 4109,
+          "mae": 4.2303,
+          "rmse": 6.0377,
+          "bias": -0.2271
+        },
+        "last_game": {
+          "n": 4109,
+          "mae": 5.3326,
+          "rmse": 7.8072,
+          "bias": 0.032
+        }
+      },
+      "players": 496,
+      "by_position": {
+        "QB": {
+          "ridge": {
+            "n": 420,
+            "mae": 6.6448,
+            "rmse": 8.2725,
+            "bias": -0.135
+          },
+          "blend": {
+            "n": 420,
+            "mae": 6.7599,
+            "rmse": 8.5763,
+            "bias": -0.03
+          },
+          "history": {
+            "n": 420,
+            "mae": 6.8195,
+            "rmse": 8.5739,
+            "bias": -0.1233
+          },
+          "last_game": {
+            "n": 420,
+            "mae": 8.2276,
+            "rmse": 10.6206,
+            "bias": 0.247
+          }
+        },
+        "RB": {
+          "ridge": {
+            "n": 1114,
+            "mae": 4.6777,
+            "rmse": 6.4995,
+            "bias": -0.0387
+          },
+          "blend": {
+            "n": 1114,
+            "mae": 4.4684,
+            "rmse": 6.5665,
+            "bias": -0.3288
+          },
+          "history": {
+            "n": 1114,
+            "mae": 4.4122,
+            "rmse": 6.5319,
+            "bias": -0.5415
+          },
+          "last_game": {
+            "n": 1114,
+            "mae": 5.657,
+            "rmse": 8.5805,
+            "bias": -0.0256
+          }
+        },
+        "WR": {
+          "ridge": {
+            "n": 1727,
+            "mae": 4.0729,
+            "rmse": 5.4159,
+            "bias": 0.246
+          },
+          "blend": {
+            "n": 1727,
+            "mae": 3.9137,
+            "rmse": 5.485,
+            "bias": 0.0322
+          },
+          "history": {
+            "n": 1727,
+            "mae": 3.9295,
+            "rmse": 5.486,
+            "bias": 0.013
+          },
+          "last_game": {
+            "n": 1727,
+            "mae": 4.8824,
+            "rmse": 7.1096,
+            "bias": 0.0228
+          }
+        },
+        "TE": {
+          "ridge": {
+            "n": 848,
+            "mae": 3.4251,
+            "rmse": 4.7297,
+            "bias": 0.0859
+          },
+          "blend": {
+            "n": 848,
+            "mae": 3.3621,
+            "rmse": 4.8362,
+            "bias": -0.2497
+          },
+          "history": {
+            "n": 848,
+            "mae": 3.3216,
+            "rmse": 4.7841,
+            "bias": -0.3544
+          },
+          "last_game": {
+            "n": 848,
+            "mae": 4.3897,
+            "rmse": 6.3101,
+            "bias": 0.0198
+          }
+        }
+      },
+      "by_week": [
+        {
+          "week": 4,
+          "ridge": {
+            "n": 245,
+            "mae": 4.4941,
+            "rmse": 6.26,
+            "bias": -0.4725
+          },
+          "blend": {
+            "n": 245,
+            "mae": 4.5271,
+            "rmse": 6.4888,
+            "bias": -0.4457
+          },
+          "history": {
+            "n": 245,
+            "mae": 4.4773,
+            "rmse": 6.4535,
+            "bias": -0.4619
+          },
+          "last_game": {
+            "n": 245,
+            "mae": 5.4162,
+            "rmse": 7.899,
+            "bias": -0.6396
+          }
+        },
+        {
+          "week": 5,
+          "ridge": {
+            "n": 239,
+            "mae": 4.1101,
+            "rmse": 5.7569,
+            "bias": -1.0678
+          },
+          "blend": {
+            "n": 239,
+            "mae": 4.0343,
+            "rmse": 5.8158,
+            "bias": -1.2415
+          },
+          "history": {
+            "n": 239,
+            "mae": 4.0341,
+            "rmse": 5.8162,
+            "bias": -1.2967
+          },
+          "last_game": {
+            "n": 239,
+            "mae": 4.8147,
+            "rmse": 7.1127,
+            "bias": -0.9408
+          }
+        },
+        {
+          "week": 6,
+          "ridge": {
+            "n": 259,
+            "mae": 4.4568,
+            "rmse": 5.8549,
+            "bias": 0.1615
+          },
+          "blend": {
+            "n": 259,
+            "mae": 4.3631,
+            "rmse": 6.0378,
+            "bias": 0.049
+          },
+          "history": {
+            "n": 259,
+            "mae": 4.3487,
+            "rmse": 6.0533,
+            "bias": -0.0818
+          },
+          "last_game": {
+            "n": 259,
+            "mae": 5.1676,
+            "rmse": 7.2791,
+            "bias": 1.067
+          }
+        },
+        {
+          "week": 7,
+          "ridge": {
+            "n": 273,
+            "mae": 4.6127,
+            "rmse": 6.3666,
+            "bias": -0.0571
+          },
+          "blend": {
+            "n": 273,
+            "mae": 4.5015,
+            "rmse": 6.4176,
+            "bias": -0.1658
+          },
+          "history": {
+            "n": 273,
+            "mae": 4.4637,
+            "rmse": 6.3981,
+            "bias": -0.3185
+          },
+          "last_game": {
+            "n": 273,
+            "mae": 5.4544,
+            "rmse": 7.8004,
+            "bias": 0.1588
+          }
+        },
+        {
+          "week": 8,
+          "ridge": {
+            "n": 236,
+            "mae": 4.5265,
+            "rmse": 6.1229,
+            "bias": -0.4606
+          },
+          "blend": {
+            "n": 236,
+            "mae": 4.5846,
+            "rmse": 6.3614,
+            "bias": -0.6038
+          },
+          "history": {
+            "n": 236,
+            "mae": 4.4609,
+            "rmse": 6.2469,
+            "bias": -0.7511
+          },
+          "last_game": {
+            "n": 236,
+            "mae": 5.8036,
+            "rmse": 8.1339,
+            "bias": -0.4277
+          }
+        },
+        {
+          "week": 9,
+          "ridge": {
+            "n": 262,
+            "mae": 4.3393,
+            "rmse": 5.9566,
+            "bias": 0.0401
+          },
+          "blend": {
+            "n": 262,
+            "mae": 4.1825,
+            "rmse": 6.0636,
+            "bias": -0.052
+          },
+          "history": {
+            "n": 262,
+            "mae": 4.1651,
+            "rmse": 6.0258,
+            "bias": -0.1868
+          },
+          "last_game": {
+            "n": 262,
+            "mae": 5.6804,
+            "rmse": 8.2956,
+            "bias": 0.0582
+          }
+        },
+        {
+          "week": 10,
+          "ridge": {
+            "n": 257,
+            "mae": 4.5021,
+            "rmse": 6.0365,
+            "bias": -0.0953
+          },
+          "blend": {
+            "n": 257,
+            "mae": 4.3873,
+            "rmse": 6.0573,
+            "bias": -0.2159
+          },
+          "history": {
+            "n": 257,
+            "mae": 4.4221,
+            "rmse": 6.0159,
+            "bias": -0.3712
+          },
+          "last_game": {
+            "n": 257,
+            "mae": 5.6753,
+            "rmse": 8.4407,
+            "bias": 0.4447
+          }
+        },
+        {
+          "week": 11,
+          "ridge": {
+            "n": 277,
+            "mae": 4.3177,
+            "rmse": 6.093,
+            "bias": 0.5024
+          },
+          "blend": {
+            "n": 277,
+            "mae": 4.3369,
+            "rmse": 6.3184,
+            "bias": 0.3927
+          },
+          "history": {
+            "n": 277,
+            "mae": 4.2511,
+            "rmse": 6.2571,
+            "bias": 0.2501
+          },
+          "last_game": {
+            "n": 277,
+            "mae": 5.3798,
+            "rmse": 7.7661,
+            "bias": 0.2645
+          }
+        },
+        {
+          "week": 12,
+          "ridge": {
+            "n": 267,
+            "mae": 4.2161,
+            "rmse": 5.7732,
+            "bias": 0.4881
+          },
+          "blend": {
+            "n": 267,
+            "mae": 4.067,
+            "rmse": 5.8181,
+            "bias": 0.2496
+          },
+          "history": {
+            "n": 267,
+            "mae": 4.0591,
+            "rmse": 5.8126,
+            "bias": 0.1099
+          },
+          "last_game": {
+            "n": 267,
+            "mae": 5.1777,
+            "rmse": 7.9516,
+            "bias": 0.4484
+          }
+        },
+        {
+          "week": 13,
+          "ridge": {
+            "n": 297,
+            "mae": 4.1787,
+            "rmse": 5.4293,
+            "bias": 0.5238
+          },
+          "blend": {
+            "n": 297,
+            "mae": 4.0237,
+            "rmse": 5.5552,
+            "bias": 0.2813
+          },
+          "history": {
+            "n": 297,
+            "mae": 4.0082,
+            "rmse": 5.5389,
+            "bias": 0.2578
+          },
+          "last_game": {
+            "n": 297,
+            "mae": 5.0478,
+            "rmse": 7.5534,
+            "bias": -0.1425
+          }
+        },
+        {
+          "week": 14,
+          "ridge": {
+            "n": 282,
+            "mae": 4.3895,
+            "rmse": 6.0984,
+            "bias": 0.4038
+          },
+          "blend": {
+            "n": 282,
+            "mae": 4.1214,
+            "rmse": 6.1719,
+            "bias": -0.0014
+          },
+          "history": {
+            "n": 282,
+            "mae": 4.1468,
+            "rmse": 6.1799,
+            "bias": 0.0532
+          },
+          "last_game": {
+            "n": 282,
+            "mae": 5.4089,
+            "rmse": 7.9639,
+            "bias": -0.1538
+          }
+        },
+        {
+          "week": 15,
+          "ridge": {
+            "n": 295,
+            "mae": 4.5631,
+            "rmse": 6.246,
+            "bias": -0.2904
+          },
+          "blend": {
+            "n": 295,
+            "mae": 4.4038,
+            "rmse": 6.2638,
+            "bias": -0.5911
+          },
+          "history": {
+            "n": 295,
+            "mae": 4.4169,
+            "rmse": 6.2603,
+            "bias": -0.6104
+          },
+          "last_game": {
+            "n": 295,
+            "mae": 5.4327,
+            "rmse": 7.9987,
+            "bias": -0.5111
+          }
+        },
+        {
+          "week": 16,
+          "ridge": {
+            "n": 312,
+            "mae": 4.4703,
+            "rmse": 5.9279,
+            "bias": -0.0382
+          },
+          "blend": {
+            "n": 312,
+            "mae": 4.2268,
+            "rmse": 5.9395,
+            "bias": -0.4021
+          },
+          "history": {
+            "n": 312,
+            "mae": 4.1932,
+            "rmse": 5.8558,
+            "bias": -0.4828
+          },
+          "last_game": {
+            "n": 312,
+            "mae": 5.6465,
+            "rmse": 8.0902,
+            "bias": 0.0137
+          }
+        },
+        {
+          "week": 17,
+          "ridge": {
+            "n": 309,
+            "mae": 4.2626,
+            "rmse": 5.8248,
+            "bias": 0.5892
+          },
+          "blend": {
+            "n": 309,
+            "mae": 4.079,
+            "rmse": 5.8949,
+            "bias": 0.2458
+          },
+          "history": {
+            "n": 309,
+            "mae": 4.1098,
+            "rmse": 5.9296,
+            "bias": 0.063
+          },
+          "last_game": {
+            "n": 309,
+            "mae": 4.9669,
+            "rmse": 7.2494,
+            "bias": 0.6589
+          }
+        },
+        {
+          "week": 18,
+          "ridge": {
+            "n": 299,
+            "mae": 4.0882,
+            "rmse": 5.5082,
+            "bias": 0.8088
+          },
+          "blend": {
+            "n": 299,
+            "mae": 3.9016,
+            "rmse": 5.6948,
+            "bias": 0.2686
+          },
+          "history": {
+            "n": 299,
+            "mae": 3.9922,
+            "rmse": 5.7657,
+            "bias": 0.1361
+          },
+          "last_game": {
+            "n": 299,
+            "mae": 4.9965,
+            "rmse": 7.5028,
+            "bias": 0.0003
+          }
+        }
+      ],
+      "uncertainty": {
+        "method": "Paired player-cluster bootstrap, percentile interval",
+        "repeats": 1000,
+        "seed": 42,
+        "clusters": 496,
+        "lower": 0.079,
+        "upper": 0.1984,
+        "quantity": "MAE ridge minus MAE history; negative favors ridge",
+        "limitation": "Conditional on sampled players; does not capture common weekly shocks or model-selection uncertainty."
+      }
+    },
+    "2026": {
+      "season": 2026,
+      "first_week": 1,
+      "last_week": 4,
+      "partial": true,
+      "overall": {
+        "ridge": {
+          "n": 235,
+          "mae": 4.6613,
+          "rmse": 6.4461,
+          "bias": -0.4773
+        },
+        "blend": {
+          "n": 235,
+          "mae": 4.7559,
+          "rmse": 6.8041,
+          "bias": -0.438
+        },
+        "history": {
+          "n": 235,
+          "mae": 4.7561,
+          "rmse": 6.7909,
+          "bias": -0.4788
+        },
+        "last_game": {
+          "n": 235,
+          "mae": 5.6672,
+          "rmse": 8.0355,
+          "bias": -0.0812
+        }
+      },
+      "players": 235,
+      "by_position": {
+        "QB": {
+          "ridge": {
+            "n": 25,
+            "mae": 4.9778,
+            "rmse": 6.1941,
+            "bias": 1.1928
+          },
+          "blend": {
+            "n": 25,
+            "mae": 5.6448,
+            "rmse": 7.0053,
+            "bias": 1.8992
+          },
+          "history": {
+            "n": 25,
+            "mae": 5.6549,
+            "rmse": 6.9898,
+            "bias": 1.8411
+          },
+          "last_game": {
+            "n": 25,
+            "mae": 6.4376,
+            "rmse": 8.7168,
+            "bias": 2.1224
+          }
+        },
+        "RB": {
+          "ridge": {
+            "n": 60,
+            "mae": 4.9464,
+            "rmse": 6.8307,
+            "bias": -1.4281
+          },
+          "blend": {
+            "n": 60,
+            "mae": 4.7246,
+            "rmse": 6.8464,
+            "bias": -1.5742
+          },
+          "history": {
+            "n": 60,
+            "mae": 4.7533,
+            "rmse": 6.8582,
+            "bias": -1.5067
+          },
+          "last_game": {
+            "n": 60,
+            "mae": 5.49,
+            "rmse": 7.9982,
+            "bias": -1.5533
+          }
+        },
+        "WR": {
+          "ridge": {
+            "n": 106,
+            "mae": 4.7245,
+            "rmse": 6.8163,
+            "bias": -0.7036
+          },
+          "blend": {
+            "n": 106,
+            "mae": 4.865,
+            "rmse": 7.2396,
+            "bias": -0.6879
+          },
+          "history": {
+            "n": 106,
+            "mae": 4.8643,
+            "rmse": 7.2265,
+            "bias": -0.7948
+          },
+          "last_game": {
+            "n": 106,
+            "mae": 5.8458,
+            "rmse": 8.3963,
+            "bias": -0.0013
+          }
+        },
+        "TE": {
+          "ridge": {
+            "n": 44,
+            "mae": 3.9403,
+            "rmse": 4.957,
+            "bias": 0.4152
+          },
+          "blend": {
+            "n": 44,
+            "mae": 4.0307,
+            "rmse": 5.4031,
+            "bias": 0.3856
+          },
+          "history": {
+            "n": 44,
+            "mae": 3.9886,
+            "rmse": 5.3473,
+            "bias": 0.3659
+          },
+          "last_game": {
+            "n": 44,
+            "mae": 5.0409,
+            "rmse": 6.6795,
+            "bias": 0.4818
+          }
+        }
+      },
+      "by_week": [
+        {
+          "week": 4,
+          "ridge": {
+            "n": 235,
+            "mae": 4.6613,
+            "rmse": 6.4461,
+            "bias": -0.4773
+          },
+          "blend": {
+            "n": 235,
+            "mae": 4.7559,
+            "rmse": 6.8041,
+            "bias": -0.438
+          },
+          "history": {
+            "n": 235,
+            "mae": 4.7561,
+            "rmse": 6.7909,
+            "bias": -0.4788
+          },
+          "last_game": {
+            "n": 235,
+            "mae": 5.6672,
+            "rmse": 8.0355,
+            "bias": -0.0812
+          }
+        }
+      ],
+      "uncertainty": {
+        "method": "Paired player-cluster bootstrap, percentile interval",
+        "repeats": 1000,
+        "seed": 42,
+        "clusters": 235,
+        "lower": -0.2815,
+        "upper": 0.0917,
+        "quantity": "MAE ridge minus MAE history; negative favors ridge",
+        "limitation": "Conditional on sampled players; does not capture common weekly shocks or model-selection uncertainty."
+      }
+    }
+  },
+  "extension_protocol": "Freeze the 2022\u20132023 fitted model and selected lambda; evaluate 2025 and available 2026 without refitting or selecting on their outcomes. Retrospective extension, not prospective validation. 2026 is partial and source coverage can change."
 }

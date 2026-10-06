@@ -48,3 +48,22 @@ class ResearchTests(unittest.TestCase):
         ci = self.report['uncertainty']
         self.assertLess(ci['lower'], 0)
         self.assertGreater(ci['upper'], 0)
+
+    def test_extension_uses_identical_frozen_model(self):
+        for year in (2025, 2026):
+            actual = [r for r in self.report['additional_predictions'] if r['season'] == year]
+            self.assertTrue(actual)
+            for r in actual:
+                self.assertAlmostEqual(r['ridge'], predict(self.report['model'], r['x']), places=10)
+                self.assertLess(r['history_end'], r['week'])
+            counts = {m['n'] for m in self.report['season_results'][str(year)]['overall'].values()}
+            self.assertEqual(counts, {len(actual)})
+
+    def test_partial_season_and_saved_extension_reproduce(self):
+        import json
+        saved = json.loads((ROOT / 'reports/research.json').read_text())
+        self.assertEqual(saved['season_results'], self.report['season_results'])
+        latest = self.report['season_results']['2026']
+        self.assertTrue(latest['partial'])
+        self.assertEqual(latest['last_week'], 4)
+        self.assertEqual([w['week'] for w in latest['by_week']], [4])

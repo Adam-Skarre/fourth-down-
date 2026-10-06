@@ -1,6 +1,6 @@
 # Fourth Down
 
-**Forecast. Decide. Verify.** An interactive fantasy-football decision lab and a reproducible, three-season forecasting study by Adam Skarre.
+**Forecast. Decide. Verify.** An interactive fantasy-football decision lab and a reproducible, five-season dataset and forecasting study by Adam Skarre.
 
 ## [Open the live dashboard →](https://adam-skarre.github.io/fourth-down-/#lineup)
 
@@ -24,7 +24,7 @@ The interface is a portable static application. It runs without accounts, API ke
 
 ## Research result
 
-**15,773 historical records. 3,503 evaluation forecasts. 420 evaluation players.**
+**23,246 historical records across 2022–2026.** The original 2024 benchmark has 3,503 evaluation forecasts; the frozen-model extension adds 4,109 in 2025 and 235 in 2026 through Week 4.
 
 | Phase | Season | Eligible observed examples | Purpose |
 |---|---:|---:|---|
@@ -44,6 +44,19 @@ The target is **half-PPR points for an observed player-week**, conditional on at
 **Interpretation:** ridge reduces RMSE relative to history average, but MAE is effectively tied. The paired player-cluster bootstrap 95% interval for MAE(ridge) − MAE(history) is **[−0.0464, +0.0472]**, crossing zero. Added complexity does not establish an MAE advantage in this evaluation.
 
 The bootstrap uses 1,000 resamples and seed 42. It is conditional on sampled players; it does not account for shared weekly shocks or model-selection uncertainty. This is retrospective, chronologically separated research, not a preregistered prospective test. Missing outcomes are excluded, never treated as zero. See [research methodology](docs/RESEARCH.md) and [row-level predictions](reports/research_predictions.csv).
+
+## Extension through 2026
+
+The research dashboard now has a **2024 / 2025 / 2026 season selector**, defaulting to the latest available season. The model remains frozen after training on 2022–2023. The new seasons do not enter model selection or refitting.
+
+| Season | Source records | Eligible evaluation forecasts | Coverage |
+|---|---:|---:|---|
+| 2025 | 6,037 | 4,109 | Weeks 1–18 |
+| 2026 | 1,436 | 235 | Weeks 1–4, retrieved October 6, 2026 |
+
+The source currently contains 2026 through Week 4. Because features require three earlier games in the same season, only Week 4 outcomes qualify for evaluation. This small, incomplete snapshot cannot establish full-season performance. It is a manual data snapshot, not an automatically refreshing feed. New-season statistics come from nflverse's current `stats_player` release; older frozen data retains its original provenance. Source schema and coverage differences can affect comparisons.
+
+See [additional row-level predictions](reports/research_extension_predictions.csv). The interactive lineup lab remains the original selected-player 2024 replay, explicitly labeled separately from the expanded research dataset. AWS/Databricks execution still covers the original reference dataset.
 
 ## Try it locally
 
@@ -79,7 +92,7 @@ The interactive lab uses the **original fixed 65/35 recency blend** on 164 selec
 | AWS S3 | Four reference artifacts uploaded through the AWS console; private, versioned, SSE-S3-encrypted storage |
 | Databricks Free Edition | User reported final PASS: 164 input records, 14 forecasts, Delta table readback and agreement with local results |
 | Direct S3 → Databricks access | Not configured; the notebook uses an explicit embedded copy of the uploaded dataset |
-| Expanded three-season benchmark | Executed locally; not yet run in Databricks |
+| Expanded five-season benchmark | Executed locally; not yet run in Databricks |
 | CloudFormation / boto3 uploader | Included implementation; not used for the console upload |
 
 The Databricks runtime export has not yet been collected. See [execution status](reports/cloud_setup_status.json), [Free Edition notebook](cloud/databricks/free_edition_run.py), and the separate [S3-connected notebook](cloud/databricks/fourth_down_notebook.py).
@@ -95,9 +108,9 @@ python3 -m unittest discover -s tests -v
 python3 -m scripts.check_browser_engine  # requires Node.js
 ```
 
-**109 unit/API/research tests** and **78 browser/Python optimizer parity cases** passed locally. Tests cover input contracts, future-data mutation, chronological feature construction, ridge fitting, baseline cohort alignment, exact optimization, and HTTP boundaries. GitHub Actions runs the suite on Python 3.10, 3.12, and 3.13.
+**111 unit/API/research tests** and **78 browser/Python optimizer parity cases** passed locally. Tests cover input contracts, future-data mutation, chronological feature construction, ridge fitting, baseline cohort alignment, exact optimization, and HTTP boundaries. GitHub Actions runs the suite on Python 3.10, 3.12, and 3.13.
 
-Normalized 2022–2024 research datasets are included with source and output hashes. The 2024 importer has been corrected to the current official nflverse release URL:
+Normalized 2022–2026 research datasets are included with source and output hashes. The 2024 importer has been corrected to the current official nflverse release URL:
 
 ```bash
 python3 -m scripts.import_nflverse --season 2024 --output data/full_2024.csv
@@ -110,7 +123,7 @@ python3 -m scripts.import_nflverse --season 2024 --output data/full_2024.csv
 | `index.html`, `site/` | Responsive portfolio and interactive browser decision lab |
 | `fourth_down/research.py` | Standardized ridge regression, chronological selection, bootstrap evaluation |
 | `fourth_down/` | Validated ingestion, SQLite features, forecasting, optimization, local API |
-| `data/research/` | Normalized three-season data and provenance |
+| `data/research/` | Normalized five-season data and provenance |
 | `reports/research*` | Reproducible study and player-week predictions |
 | `cloud/` | AWS storage/upload components and Databricks notebooks |
 | `tests/`, `scripts/` | Validation, import, export, and portable-site generation |

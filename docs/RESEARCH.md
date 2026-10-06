@@ -39,3 +39,16 @@ The decision lab remains on its original documented heuristic. The fitted resear
 ## Reproduction
 
 Run `python3 -m fourth_down.research`, then `python3 -m scripts.build_site`. The study JSON stores the scaling parameters, fitted coefficients, validation scores, cohort sizes, and aggregate results. The prediction CSV stores each evaluated player-week's forecast, target, baseline values, and history cutoff.
+
+## Frozen-model extension: 2025 and 2026
+
+The research dashboard now has a **2024 / 2025 / 2026 season selector**, defaulting to the latest available season. The model remains frozen after training on 2022–2023. The new seasons do not enter model selection or refitting.
+
+| Season | Source records | Eligible evaluation forecasts | Coverage |
+|---|---:|---:|---|
+| 2025 | 6,037 | 4,109 | Weeks 1–18 |
+| 2026 | 1,436 | 235 | Weeks 1–4, retrieved October 6, 2026 |
+
+The source currently contains 2026 through Week 4. Because features require three earlier games in the same season, only Week 4 outcomes qualify for evaluation. This small, incomplete snapshot cannot establish full-season performance. It is a manual data snapshot, not an automatically refreshing feed. New-season statistics come from nflverse's current `stats_player` release; older frozen data retains its original provenance. Source schema and coverage differences can affect comparisons.
+
+See [additional row-level predictions](../reports/research_extension_predictions.csv). The interactive lineup lab remains the original selected-player 2024 replay, explicitly labeled separately from the expanded research dataset. AWS/Databricks execution still covers the original reference dataset.

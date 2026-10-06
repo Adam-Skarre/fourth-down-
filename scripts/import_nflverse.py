@@ -16,7 +16,7 @@ from urllib.error import URLError
 from urllib.request import Request, urlopen
 from fourth_down.data import DataError, number, integer, validate_rows, write_games
 
-SOURCE = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2024.csv'
+SOURCE = 'https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_{season}.csv'
 MAX_BYTES = 100_000_000
 
 
@@ -64,21 +64,23 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--season', type=int, default=2024)
     parser.add_argument('--input', type=Path, help='Already-downloaded nflverse CSV; skips network.')
-    parser.add_argument('--output', type=Path, default=Path('data/full_2024.csv'))
+    parser.add_argument('--output', type=Path, default=None)
     args = parser.parse_args(argv)
-    if args.season != 2024:
-        parser.error('This build supports 2024 imports; the bundled bye schedule covers 2024 only.')
+    args.output = args.output or Path(f'data/full_{args.season}.csv')
+    if not 1999 <= args.season <= datetime.now(timezone.utc).year:
+        parser.error('Season must be between 1999 and the current year.')
+    source = SOURCE.format(season=args.season)
     if args.output.resolve() == (Path(__file__).resolve().parents[1] / 'data/reference_2024.csv').resolve():
         parser.error('Do not overwrite the checksum-protected reference file. Choose a different output.')
     temp = args.output.with_suffix('.tmp.csv')
     try:
         if args.input and args.input.stat().st_size > MAX_BYTES:
             raise DataError('Input exceeds 100 MB.')
-        raw = args.input.read_bytes() if args.input else fetch_bytes(SOURCE)
+        raw = args.input.read_bytes() if args.input else fetch_bytes(source)
         games = normalize(raw, args.season)
         write_games(games, temp)
         os.replace(temp, args.output)
-        metadata = {'source': str(args.input) if args.input else SOURCE,
+        metadata = {'source': str(args.input) if args.input else source,
                     'retrieved_at': datetime.now(timezone.utc).isoformat(), 'season': args.season,
                     'source_sha256': hashlib.sha256(raw).hexdigest(),
                     'normalized_sha256': hashlib.sha256(args.output.read_bytes()).hexdigest(),
@@ -87,7 +89,7 @@ def main(argv: list[str] | None = None) -> int:
                     'changes': 'REG QB/RB/WR/TE only; selected normalized columns; no imputed outcomes.'}
         args.output.with_suffix('.manifest.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
         print(json.dumps(metadata, indent=2))
-        print(f'Run: python -m fourth_down --data "{args.output}"')
+        print(f'Historical dataset saved; the lineup replay bye schedule remains 2024-specific. Data:  "{args.output}"')
         return 0
     except (DataError, URLError, OSError, UnicodeError, TimeoutError) as exc:
         temp.unlink(missing_ok=True)

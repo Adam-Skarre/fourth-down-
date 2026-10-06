@@ -23,6 +23,30 @@
       "normalized_sha256": "cb2854786fe61d2059ce607cdc9f2128a72f291ada8e93b542cafc9b10921ad3",
       "records": 5227,
       "players": 559
+    },
+    {
+      "season": 2025,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv",
+      "source_sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "normalized_sha256": "67f09cf6eba3fda0981f278cec5182ff5d9c5e8830f443d60d22442491635062",
+      "records": 6037,
+      "players": 610,
+      "first_week": 1,
+      "last_week": 18,
+      "retrieved_on": "2026-10-06",
+      "status": "completed regular season"
+    },
+    {
+      "season": 2026,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+      "source_sha256": "81c5bcc263d7b04289c3bfb19e1ae510c289d91fc626a3a33169c0f073aceb6f",
+      "normalized_sha256": "a4cd4cf014168e4190e7eaf9ae08b8d50895237bec05fee32f50d1fd5db408a2",
+      "records": 1436,
+      "players": 474,
+      "first_week": 1,
+      "last_week": 4,
+      "retrieved_on": "2026-10-06",
+      "status": "partial season"
     }
   ],
   "retrieved_on": "2026-10-06",
