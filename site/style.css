@@ -283,63 +283,166 @@ em {
 .hero-footnote span {
   margin: 0 8px;
 }
-.field-art {
-  background: #193a33;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 22px 45px -25px #18362d70;
+/* A field goal assembled from numbers, with an original looping kick. */
+.kick-art {
   position: relative;
-  transform: rotate(-1.4deg);
-  border: 1px solid #27483d;
-}
-.field-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 22px;
-  border-bottom: 1px solid #ffffff1c;
-  font: 9px var(--mono);
-  color: #b5c6b9;
-  letter-spacing: 0.07em;
-}
-.field-art svg {
+  min-width: 0;
   width: 100%;
-  display: block;
-  max-height: 300px;
 }
-.field-bottom {
+.kick-heading,
+.kick-footer {
   display: flex;
-  gap: 20px;
-  padding: 0 22px 22px;
-  color: #b5c6b9;
-  font: 10px var(--mono);
-}
-.field-bottom i {
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background: #fa693d;
-  margin-right: 6px;
-}
-.field-caption {
-  background: #e9efdc;
-  padding: 22px;
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  color: #254a3c;
+  gap: 12px;
+  font: 9px/1.5 var(--mono);
+  letter-spacing: 0.09em;
+  color: var(--muted);
 }
-.field-caption > span {
-  font: 9px/1.6 var(--mono);
-  max-width: 100px;
-  letter-spacing: 0.07em;
+.kick-heading {
+  padding: 0 8px 10px;
 }
-.field-caption strong {
-  font-size: 25px;
-  line-height: 1.15;
-  letter-spacing: -0.8px;
-  font-weight: 500;
+.kick-art svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+  font: 12px var(--mono);
+}
+.kick-grid {
+  fill: var(--ink);
+  opacity: 0.075;
+  font-size: 11px;
+  letter-spacing: 0.25px;
+}
+.kick-posts {
+  fill: #37433d;
+  font-weight: 600;
+}
+.kick-flight {
+  transform: translate(315px, 119px);
+  animation: field-goal-flight 7s linear infinite;
+}
+.kick-spin {
+  fill: #ed591e;
+  font-size: 13px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  animation: field-goal-spin 7s linear infinite;
+}
+.kick-lace {
+  fill: #9a350e;
+}
+.kick-trail {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 1;
+  stroke-dasharray: 2 12;
+  opacity: 0.17;
+}
+.kick-score {
+  fill: var(--orange);
+  font: 11px var(--mono);
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: field-goal-score 7s linear infinite;
+}
+.kick-footer {
+  border-top: 1px solid var(--line);
+  padding: 15px 8px 0;
+}
+.kick-footer i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--orange);
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.kick-footer button {
+  border: 0;
+  background: transparent;
+  padding: 6px 0 6px 10px;
+  color: var(--muted);
+  font: 10px var(--mono);
+  cursor: pointer;
+}
+.kick-art.is-paused * {
+  animation-play-state: paused;
+}
+@keyframes field-goal-flight {
+  0%,
+  12% {
+    transform: translate(85px, 405px) scale(1.15);
+    opacity: 1;
+  }
+  22% {
+    transform: translate(155px, 262px) scale(1.07);
+  }
+  32% {
+    transform: translate(225px, 168px) scale(0.98);
+  }
+  42% {
+    transform: translate(295px, 122px) scale(0.89);
+  }
+  52% {
+    transform: translate(365px, 124px) scale(0.8);
+  }
+  62% {
+    transform: translate(440px, 192px) scale(0.65);
+    opacity: 1;
+  }
+  72%,
+  88% {
+    transform: translate(477px, 247px) scale(0.4);
+    opacity: 0;
+  }
+  89% {
+    transform: translate(85px, 405px) scale(1.15);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(85px, 405px) scale(1.15);
+    opacity: 1;
+  }
+}
+@keyframes field-goal-spin {
+  0%,
+  12% {
+    transform: rotate(-35deg);
+  }
+  72%,
+  100% {
+    transform: rotate(685deg);
+  }
+}
+@keyframes field-goal-score {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  67%,
+  86% {
+    opacity: 1;
+  }
+  96%,
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 760px) {
+  .kick-art {
+    max-width: 520px;
+    margin: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kick-footer button {
+    display: none;
+  }
+  .kick-score {
+    opacity: 1;
+  }
 }
 .metrics-strip {
   display: grid;

@@ -79,8 +79,31 @@ function go(view) {
   location.hash = view;
 }
 function field() {
-  return `<div class="field-art" aria-hidden="true"><div class="field-top"><span>THE NEXT PLAY</span><span>4TH & DECISION</span></div><svg viewBox="0 0 500 330"><defs><pattern id="field-grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity=".075"/></pattern></defs><rect width="500" height="330" fill="url(#field-grid)"/><g stroke="#fff" stroke-opacity=".13"><path d="M50 40V290M150 40V290M250 40V290M350 40V290M450 40V290"/></g><g fill="#d2d9c5" opacity=".5" font-family="monospace" font-size="15"><text x="37" y="25">10</text><text x="137" y="25">20</text><text x="237" y="25">30</text><text x="337" y="25">40</text><text x="437" y="25">50</text></g><path d="M115 252V135Q115 105 145 105H352" stroke="#fa693d" stroke-width="4" fill="none"/><path d="M335 91L354 105L335 119" stroke="#fa693d" stroke-width="4" fill="none"/><path d="M188 252V181L291 78M260 252V193H395" stroke="#e8eedc" stroke-opacity=".65" stroke-width="2" stroke-dasharray="6 7" fill="none"/><g fill="#172f2d" stroke="#e8eedc" stroke-width="2"><circle cx="115" cy="252" r="12"/><circle cx="188" cy="252" r="12"/><circle cx="260" cy="252" r="12"/><circle cx="333" cy="252" r="12"/></g><circle cx="115" cy="252" r="5" fill="#ff7045"/><g stroke="#e8eedc" stroke-opacity=".5" stroke-width="2"><path d="M99 59l12 12m0-12l-12 12M203 134l12 12m0-12l-12 12M321 158l12 12m0-12l-12 12"/></g></svg><div class="field-bottom"><span><i></i>Forecast</span><span>Constraints</span><span>Decision ↗</span></div><div class="field-caption"><span>THE EDGE IS IN THE PROCESS.</span><strong>Every choice.<br>A reason behind it.</strong></div></div>`;
+  // Original typographic artwork. Digits are decorative, not model outputs.
+  const digit = (x, y) => (x * 7 + y * 3 + x * y) % 10;
+  let backdrop = "",
+    posts = "",
+    ball = "";
+  for (let row = 0; row < 35; row++) {
+    const y = 18 + row * 14;
+    let line = "";
+    for (let col = 0; col < 42; col++) line += digit(col, row) + " ";
+    backdrop += `<text x="4" y="${y}">${line}</text>`;
+  }
+  for (let y = 98; y <= 294; y += 14) {
+    posts += `<text x="298" y="${y}">${digit(21, y)}</text><text x="480" y="${y}">${digit(34, y)}</text>`;
+  }
+  for (let x = 298; x <= 480; x += 14)
+    posts += `<text x="${x}" y="308">${digit(x, 22)}</text>`;
+  for (let y = 322; y <= 462; y += 14)
+    posts += `<text x="389" y="${y}">${digit(28, y)}</text>`;
+  for (let row = -2; row <= 2; row++)
+    for (let col = -3; col <= 3; col++)
+      if ((col / 3.8) ** 2 + (row / 2.5) ** 2 < 1)
+        ball += `<text x="${col * 10}" y="${row * 12}" class="${row === 0 && Math.abs(col) < 2 ? "kick-lace" : ""}">${digit(col + 4, row + 3)}</text>`;
+  return `<div class="kick-art"><div class="kick-heading"><span>THE NUMBERS. THE NEXT PLAY.</span><span>04 / FD</span></div><svg viewBox="0 0 600 490" aria-hidden="true" focusable="false"><g class="kick-grid">${backdrop}</g><g class="kick-posts">${posts}</g><path class="kick-trail" d="M85 405 Q205 -40 440 192"/><g class="kick-flight"><g class="kick-spin">${ball}</g></g><g class="kick-score"><text x="355" y="65">IT’S GOOD.</text><text x="380" y="87">+ 3</text></g></svg><div class="kick-footer"><span><i></i> FROM NUMBERS TO POSSIBILITIES</span><button type="button" data-action="kick-toggle" aria-label="Pause football animation" aria-pressed="false">Pause Ⅱ</button></div></div>`;
 }
+
 function overview() {
   const total = Object.values(R.cohorts).reduce((a, c) => a + c.records, 0);
   return `<section class="hero"><div class="hero-text"><div class="eyebrow"><span class="orange-dot"></span> FANTASY FOOTBALL / DECISION SCIENCE</div><h1>Better decisions.<br><em>Every down.</em></h1><p class="hero-description">A forecast is only the beginning. Turn historical player data into a legal lineup—and put every prediction to the test.</p><div class="hero-actions"><a class="button primary" href="#lineup">Explore the lineup lab <span>↗</span></a><a class="text-link" href="#research">See the evidence <span>→</span></a></div><div class="hero-footnote">Interactive 2024 replay <span>·</span> No signup <span>·</span> No live advice</div></div>${field()}</section>
@@ -331,6 +354,15 @@ document.addEventListener("click", (e) => {
     S.roster.add(b.dataset.add);
     save();
     render();
+  }
+  if (b.dataset.action === "kick-toggle") {
+    const paused = b.closest(".kick-art").classList.toggle("is-paused");
+    b.textContent = paused ? "Play ▷" : "Pause Ⅱ";
+    b.setAttribute(
+      "aria-label",
+      paused ? "Play football animation" : "Pause football animation",
+    );
+    b.setAttribute("aria-pressed", String(paused));
   }
   if (b.dataset.action === "reset") {
     S.roster = new Set(D.meta.default_roster);
