@@ -2,9 +2,15 @@
 
 **Forecast. Decide. Verify.** An interactive fantasy-football decision lab and a reproducible, three-season forecasting study by Adam Skarre.
 
-[Explore the project](https://adam-skarre.github.io/fourth-down-/) · [Research implementation](fourth_down/research.py) · [Model results](reports/research.json) · [Data provenance](data/research/manifest.json)
+## [Open the live dashboard →](https://adam-skarre.github.io/fourth-down-/#lineup)
 
-![Fourth Down overview](docs/screenshots/portfolio-overview.jpg)
+**[Homepage](https://adam-skarre.github.io/fourth-down-/) · [Interactive lineup lab](https://adam-skarre.github.io/fourth-down-/#lineup) · [Research dashboard](https://adam-skarre.github.io/fourth-down-/#research)**
+
+Open the link in any browser. No installation, login, or download is required. Change players, scoring, and availability in the lineup lab, or explore model results in the research dashboard.
+
+Hosted on **GitHub Pages**, with a custom JavaScript interface. This is an interactive historical-data dashboard, not a live NFL data feed. Streamlit is not required to view or use it.
+
+[Research implementation](fourth_down/research.py) · [Model results](reports/research.json) · [Data provenance](data/research/manifest.json)
 
 ## The question
 
