@@ -1832,3 +1832,6 @@ details p {
     animation: none !important;
   }
 }
+
+/* Keep the full evaluation range legible on narrow research cards. */
+.research-split > div:last-child strong { font-size: clamp(25px, 3vw, 35px); }

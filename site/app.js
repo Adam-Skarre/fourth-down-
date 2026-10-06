@@ -108,7 +108,7 @@ function field() {
 function overview() {
   const total = Object.values(R.cohorts).reduce((a, c) => a + c.records, 0);
   return `<section class="hero"><div class="hero-text"><div class="eyebrow"><span class="orange-dot"></span> FOR THE LOVE OF THE GAME</div><h1>Better decisions.<br><em>Every down.</em></h1><p class="hero-description">Who starts? Who sits? What changes with one pickup? Explore the numbers behind your next lineup.</p><div class="hero-actions"><a class="button primary" href="#lineup">Build a lineup <span>↗</span></a><a class="text-link" href="#research">Explore the forecasts <span>→</span></a></div><div class="hero-footnote">Interactive 2024 replay <span>·</span> No signup <span>·</span> Historical data</div></div>${field()}</section>
-<section class="metrics-strip" aria-label="Research scope">${metric(num(total), "Historical records", "2022–2026 · 2026 through Week 4")}${metric(num(R.overall.ridge.n), "Evaluation forecasts", "2024 · 420 eligible players")}${metric("5 seasons", "Seasons of football", "2022–2026 · latest season partial")}${metric("7 slots", "One starting lineup", "QB · 2 RB · 2 WR · TE · FLEX")}</section>
+<section class="metrics-strip" aria-label="Research scope">${metric(num(total), "Historical records", "2022–2026 · 2026 through Week 4")}${metric(num(Object.values(R.season_results).reduce((sum, season) => sum + season.overall.ridge.n, 0)), "Evaluation forecasts", "2024–2026 · frozen model")}${metric("5 seasons", "Seasons of football", "2022–2026 · latest season partial")}${metric("7 slots", "One starting lineup", "QB · 2 RB · 2 WR · TE · FLEX")}</section>
 <section class="section"><div class="section-heading"><div>${sectionLabel("01", "EXPLORE YOUR OPTIONS")}<h2>Every roster has<br>a few tough calls.</h2></div><p>Compare the players. Try the pickup.<br>See what changes before you settle on a lineup.</p></div><div class="feature-grid"><a class="feature-card" href="#lineup"><div class="card-index">01 / LINEUP LAB <span>↗</span></div><div class="mini-lineup"><span>QB</span><div></div><b>17.4</b><span>RB</span><div></div><b>19.5</b><span>FLEX</span><div></div><b>10.5</b></div><h3>The best seven. Within your rules.</h3><p>Pick your roster, mark unavailable players, and compare starting lineups. Try a pickup to see where it makes a difference.</p><span class="card-link">Try a lineup →</span></a><a class="feature-card research-card" href="#research"><div class="card-index">02 / FORECAST RESEARCH <span>↗</span></div><div class="mini-benchmark"><span>Ridge regression <b>${f(R.overall.ridge.mae, 3)}</b></span><div style="--bar:78%"></div><span>History average <b>${f(R.overall.history.mae, 3)}</b></span><div style="--bar:78%"></div><small>2024 MAE · lower is better</small></div><h3>A fair test. Including the close calls.</h3><p>The fitted model reduces squared error, but barely changes average absolute error. The uncertainty interval tells the fuller story.</p><span class="card-link">Inspect the research →</span></a></div></section>
 <section class="principles"><div>${sectionLabel("02", "HOW WE LOOK AT FOOTBALL")}<h2>The game is uncertain.<br><em>Stay curious.</em></h2></div><div class="principle"><span>01</span><h3>Start with what was known.</h3><p>Every feature uses earlier weeks. Model settings are selected in 2023 before the 2024 evaluation.</p></div><div class="principle"><span>02</span><h3>Test the simple answer.</h3><p>Compare every model on the same player-weeks. Added complexity has to earn its place.</p></div><div class="principle"><span>03</span><h3>Leave room for uncertainty.</h3><p>Observed games, historical data, explicit assumptions. No invented outcomes or promises of wins.</p></div></section>
 <section class="closing"><div><span class="eyebrow">THERE’S ALWAYS ANOTHER ANGLE.</span><h2>Get closer<br>to the numbers.</h2></div><a class="button dark" href="#data">Behind the numbers ↗</a></section>`;
@@ -288,10 +288,10 @@ function research() {
       "Select regularization from five candidates by MAE.",
     ],
     [
-      "2024",
+      "2024–2026",
       "EVALUATE",
-      "3,503 examples",
-      "Refit on 2022–23; score the selected configuration.",
+      `${num(Object.values(R.season_results).reduce((sum, season) => sum + season.overall.ridge.n, 0))} forecasts`,
+      "Frozen 2022–23 model; 2026 through Week 4.",
     ],
   ]
     .map(
