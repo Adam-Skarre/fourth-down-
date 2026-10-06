@@ -1835,3 +1835,77 @@ details p {
 
 /* Keep the full evaluation range legible on narrow research cards. */
 .research-split > div:last-child strong { font-size: clamp(25px, 3vw, 35px); }
+
+/* Finishing pass: consistent surfaces, readable controls, and compact mobile navigation. */
+::selection { background: #f7c9b5; color: var(--ink); }
+button, select, input { -webkit-tap-highlight-color: transparent; }
+.metric strong, .numeric, .total-score, .move-gain, .research-split b { font-variant-numeric: tabular-nums; }
+.panel, .settings, .feature-card, .research-split, .pipeline { border-radius: 14px; }
+.panel, .settings { box-shadow: 0 4px 20px #193d3605; }
+.feature-card { transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+@media (hover: hover) {
+  .feature-card:hover { border-color: #b6c3b8; box-shadow: 0 12px 28px #193d360b; transform: translateY(-3px); }
+  .button:hover { box-shadow: 0 5px 14px #193d3612; }
+  tbody tr:hover { background: #f5f7f1; }
+}
+.settings label, .compare-controls label, .benchmark-controls label { gap: 8px; }
+select { min-height: 42px; border-radius: 7px; cursor: pointer; }
+.search-wrap input { min-height: 44px; }
+.segmented { border-radius: 9px; padding: 4px; }
+.segmented button { min-height: 36px; border-radius: 6px; }
+.panel-heading { gap: 16px; }
+.page-heading p { max-width: 680px; }
+.context-note { line-height: 1.75; }
+.research-split { overflow: hidden; }
+.research-split b { display: block; }
+.research-split > div:last-child { background: #f1f5e9; }
+.method-details details { padding-block: 19px; }
+.method-details summary { cursor: pointer; line-height: 1.5; }
+#toast { z-index: 100; max-width: calc(100vw - 32px); box-shadow: 0 8px 30px #193d3625; bottom: max(20px, env(safe-area-inset-bottom)); }
+.footer { row-gap: 18px; }
+@media (max-width: 760px) {
+  .masthead { padding-top: 15px; gap: 12px; }
+  .masthead nav { gap: 4px; padding-block: 3px 8px; }
+  .masthead nav a { font-size: 12px; min-height: 44px; display: flex; align-items: center; justify-content: center; padding: 10px 7px; border-radius: 7px; white-space: nowrap; }
+  .masthead nav a.active { background: var(--orange-light); color: #a63817; }
+  .masthead nav a.active:after { display: none; }
+  .repo-link { min-height: 40px; display: flex; align-items: center; }
+  .hero h1 { font-size: clamp(42px, 12vw, 52px); }
+  .hero-actions { flex-wrap: wrap; gap: 16px 20px; }
+  .hero-footnote { font-size: 11px; line-height: 1.8; }
+  .metric { padding-block: 20px; }
+  .metric > span { font-size: 12px; }
+  .metric small { font-size: 11px; line-height: 1.6; }
+  .page-heading { padding-block: 32px; }
+  .page-heading p { font-size: 14px; line-height: 1.8; }
+  .settings { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); padding: 18px; gap: 18px; }
+  .settings > div:nth-child(3), .settings > .check-option { grid-column: 1 / -1; }
+  .settings .segmented { display: flex; }
+  .settings .segmented button { flex: 1; }
+  .settings label, .compare-controls label, .benchmark-controls label { font-size: 12px; }
+  .settings select, .compare-controls select, .benchmark-controls select, .search-wrap input { font-size: 16px; }
+  .settings select { max-width: 100%; }
+  .settings > * { min-width: 0; }
+  .check-option { font-size: 12px; min-height: 44px; }
+  .segmented button { font-size: 12px; min-height: 40px; }
+  .context-note, .panel-foot, .fine, .cloud-item p, .quality p, .source-cta p { font-size: 12px; line-height: 1.75; }
+  .text-button { min-height: 44px; font-size: 12px; }
+  .panel-heading { flex-wrap: wrap; padding-bottom: 14px; }
+  .compare-controls { flex-wrap: wrap; }
+  .compare-controls label { flex: 1 1 140px; min-width: 0; }
+  .compare-controls select { width: 100%; }
+  .comparison-stats p { font-size: 12px; }
+  .comparison-stats small, .legend { font-size: 11px; }
+  .cloud-item b { font-size: 14px; }
+  .status { font-size: 10px; line-height: 1.6; }
+  .research-split > div { padding: 20px 22px; }
+  .research-split p { font-size: 12px; line-height: 1.7; }
+  .lineup-card-head .pill { font-size: 9px; }
+  .footer { padding: 26px 20px; font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .masthead nav { gap: 2px; }
+  .masthead nav a { font-size: 10.5px; padding-inline: 4px; }
+  .brand { gap: 8px; }
+  .repo-link { padding-inline: 10px; }
+}
