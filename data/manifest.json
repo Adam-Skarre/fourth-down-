@@ -1,0 +1,34 @@
+{
+  "name": "2024 curated historical reference",
+  "mode": "curated_historical",
+  "season": 2024,
+  "week_range": [
+    3,
+    16
+  ],
+  "default_week": 13,
+  "records": 164,
+  "players": 14,
+  "sha256": "6c23d4c0e85077f2cc31fed03117f75517a6790dbc4bb1796f37bbf8e5d4f4eb",
+  "source": "nflverse player statistics, preserved in a commit-pinned public mirror",
+  "upstream": "https://github.com/nflverse/nflverse-data/releases/tag/player_stats",
+  "mirror_commit": "03995a26515c43bfe687f0c3723a69806b2e7d4e",
+  "mirror_base": "https://raw.githubusercontent.com/merlin-gogolin/fantasy/03995a26515c43bfe687f0c3723a69806b2e7d4e/data/raw/",
+  "source_files": {
+    "QB": "QB_2024_weekly.csv",
+    "RB": "RB_2024_weekly.csv",
+    "WR": "WR_2024_weekly.csv",
+    "TE": "TE_2024_weekly.csv"
+  },
+  "retrieved_on": "2026-10-06",
+  "license": "CC BY 4.0 (nflverse data)",
+  "changes": "Selected 14 named players and regular-season weeks 3\u201316; retained identity, week, team, opponent, standard fantasy points and receptions; renamed columns. No synthetic player outcomes.",
+  "limitations": [
+    "Curated subset, not a league-wide universe or current feed.",
+    "Weeks 1\u20132 are intentionally not bundled; all history metrics refer to the loaded sample.",
+    "Missing player-week rows are not treated as zero and do not prove inactivity.",
+    "Team labels use the last observed historical record, so trades may not be known immediately.",
+    "No injury, depth-chart, roster ownership or live availability feed."
+  ],
+  "bye_source": "https://dknetwork.draftkings.com/2024/05/16/bye-week-breakdown-for-the-2024-nfl-season/"
+}

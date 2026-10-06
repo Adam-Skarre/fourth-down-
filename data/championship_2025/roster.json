@@ -1,0 +1,195 @@
+{
+  "season": 2025,
+  "team_label": "AJ \u2014 2025 championship roster",
+  "observed_team_result": {
+    "finish": 1,
+    "listed_record": "9-5-0",
+    "evidence": "User-provided league-history screenshot",
+    "algorithm_attribution": false
+  },
+  "draft_roster": [
+    {
+      "id": "chase",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team_at_draft": "CIN",
+      "printed_bye": 10,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "achane",
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team_at_draft": "MIA",
+      "printed_bye": 12,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": true
+    },
+    {
+      "id": "kittle",
+      "name": "George Kittle",
+      "position": "TE",
+      "team_at_draft": "SF",
+      "printed_bye": 14,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "mahomes",
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team_at_draft": "KC",
+      "printed_bye": 10,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "position": "RB",
+      "team_at_draft": "DET",
+      "printed_bye": 8,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": true
+    },
+    {
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team_at_draft": "DEN",
+      "printed_bye": 12,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": true
+    },
+    {
+      "id": "williams",
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team_at_draft": "DET",
+      "printed_bye": 8,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "olave",
+      "name": "Chris Olave",
+      "position": "WR",
+      "team_at_draft": "NO",
+      "printed_bye": 11,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "ekeler",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team_at_draft": "WAS",
+      "printed_bye": 12,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "reed",
+      "name": "Jayden Reed",
+      "position": "WR",
+      "team_at_draft": "GB",
+      "printed_bye": 5,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "guerendo",
+      "name": "Isaac Guerendo",
+      "position": "RB",
+      "team_at_draft": "SF",
+      "printed_bye": 14,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "legette",
+      "name": "Xavier Legette",
+      "position": "WR",
+      "team_at_draft": "CAR",
+      "printed_bye": 14,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "bates",
+      "name": "Jake Bates",
+      "position": "K",
+      "team_at_draft": "DET",
+      "printed_bye": 8,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "cardinals",
+      "name": "Arizona Cardinals",
+      "position": "DST",
+      "team_at_draft": "ARI",
+      "printed_bye": 8,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "sample",
+      "name": "Drew Sample",
+      "position": "TE",
+      "team_at_draft": "CIN",
+      "printed_bye": 10,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "lawrence",
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team_at_draft": "JAX",
+      "printed_bye": 8,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    },
+    {
+      "id": "watson",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team_at_draft": "GB",
+      "printed_bye": 5,
+      "source": "User-provided draft-board photo",
+      "statistical_data_bundled": false
+    }
+  ],
+  "reported_additions": [
+    {
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "source": "User reports playoff addition",
+      "acquisition_week": null,
+      "dropped_player": null,
+      "statistical_data_bundled": true
+    }
+  ],
+  "unknowns": [
+    "League scoring rules",
+    "Exact starting-slot requirements",
+    "Weekly lineups and opponents",
+    "Injury/active reports as available before kickoff",
+    "All add/drop dates, including Stevenson acquisition"
+  ],
+  "scenario_defaults": {
+    "scoring": "ppr",
+    "comparison_weeks": [
+      15,
+      16,
+      17
+    ],
+    "stevenson_assumed_available_from": 15,
+    "confirmation": "Scenario assumptions, not verified league settings or transaction dates"
+  },
+  "scope": "Complete personal roster inventory; four-running-back statistical diagnostic, not a complete team replay."
+}

@@ -1,0 +1,29 @@
+{
+  "method": "Unchanged HTML/CSS/JS rendered in Chromium, with fetch relayed to real HTTP API using http.client. No mocked model results. Direct browser navigation blocked by administrator policy.",
+  "passed": 21,
+  "failed": 0,
+  "checks": [
+    "Real HTTP serves research page; browser renders injected HTML/CSS/JS",
+    "All 17 drafted players plus reported addition displayed",
+    "Bundled observations render",
+    "Rendered original result derives from real API",
+    "Stronger fixed-player control remains visible",
+    "Unfavorable fit result displayed without alteration",
+    "Desktop has no page-level horizontal overflow",
+    "standard / acquisition week 15 recomputes comparable cohort",
+    "standard / acquisition week 16 recomputes comparable cohort",
+    "standard / acquisition week 17 recomputes comparable cohort",
+    "half / acquisition week 15 recomputes comparable cohort",
+    "half / acquisition week 16 recomputes comparable cohort",
+    "half / acquisition week 17 recomputes comparable cohort",
+    "ppr / acquisition week 15 recomputes comparable cohort",
+    "ppr / acquisition week 16 recomputes comparable cohort",
+    "ppr / acquisition week 17 recomputes comparable cohort",
+    "Export names exact active scenario",
+    "Downloaded JSON contains active calculation, not stale default",
+    "Mobile has no page-level horizontal overflow",
+    "Original application serves link to case route (navigation tested at HTTP layer)",
+    "No uncaught JavaScript errors"
+  ],
+  "javascript_errors": []
+}

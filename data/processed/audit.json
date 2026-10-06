@@ -1,0 +1,1647 @@
+{
+  "season": 2024,
+  "scoring": "half",
+  "overall": {
+    "model": {
+      "n": 121,
+      "mae": 6.1191,
+      "rmse": 7.6802,
+      "bias": -0.3181
+    },
+    "history_mean": {
+      "n": 121,
+      "mae": 6.2254,
+      "rmse": 7.8946,
+      "bias": -0.4206
+    },
+    "last_game": {
+      "n": 121,
+      "mae": 7.8579,
+      "rmse": 9.8531,
+      "bias": 0.0423
+    }
+  },
+  "weekly": [
+    {
+      "week": 6,
+      "n": 6,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 6,
+        "mae": 4.4864,
+        "rmse": 5.8281,
+        "bias": 1.7927
+      },
+      "history_mean": {
+        "n": 6,
+        "mae": 4.2322,
+        "rmse": 5.3265,
+        "bias": 1.8678
+      },
+      "last_game": {
+        "n": 6,
+        "mae": 8.65,
+        "rmse": 9.3932,
+        "bias": -0.4167
+      }
+    },
+    {
+      "week": 7,
+      "n": 10,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 10,
+        "mae": 5.4466,
+        "rmse": 6.0115,
+        "bias": 1.8278
+      },
+      "history_mean": {
+        "n": 10,
+        "mae": 5.4598,
+        "rmse": 6.0181,
+        "bias": 2.0598
+      },
+      "last_game": {
+        "n": 10,
+        "mae": 7.076,
+        "rmse": 7.9882,
+        "bias": 0.536
+      }
+    },
+    {
+      "week": 8,
+      "n": 10,
+      "missing_outcomes": 1,
+      "model": {
+        "n": 10,
+        "mae": 6.4055,
+        "rmse": 8.0125,
+        "bias": -1.6995
+      },
+      "history_mean": {
+        "n": 10,
+        "mae": 6.4238,
+        "rmse": 7.9875,
+        "bias": -1.5152
+      },
+      "last_game": {
+        "n": 10,
+        "mae": 9.068,
+        "rmse": 10.9703,
+        "bias": -1.888
+      }
+    },
+    {
+      "week": 9,
+      "n": 12,
+      "missing_outcomes": 1,
+      "model": {
+        "n": 12,
+        "mae": 6.9166,
+        "rmse": 8.4928,
+        "bias": -3.3255
+      },
+      "history_mean": {
+        "n": 12,
+        "mae": 6.882,
+        "rmse": 8.3363,
+        "bias": -3.3079
+      },
+      "last_game": {
+        "n": 12,
+        "mae": 7.0133,
+        "rmse": 9.0544,
+        "bias": -2.4067
+      }
+    },
+    {
+      "week": 10,
+      "n": 12,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 12,
+        "mae": 4.7328,
+        "rmse": 5.7887,
+        "bias": 2.8482
+      },
+      "history_mean": {
+        "n": 12,
+        "mae": 4.7674,
+        "rmse": 5.9912,
+        "bias": 2.5619
+      },
+      "last_game": {
+        "n": 12,
+        "mae": 7.6667,
+        "rmse": 9.6299,
+        "bias": 5.3167
+      }
+    },
+    {
+      "week": 11,
+      "n": 11,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 11,
+        "mae": 7.438,
+        "rmse": 8.8225,
+        "bias": -0.2208
+      },
+      "history_mean": {
+        "n": 11,
+        "mae": 7.4995,
+        "rmse": 8.9476,
+        "bias": 0.0552
+      },
+      "last_game": {
+        "n": 11,
+        "mae": 8.5091,
+        "rmse": 10.5098,
+        "bias": -2.9636
+      }
+    },
+    {
+      "week": 12,
+      "n": 9,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 9,
+        "mae": 6.5904,
+        "rmse": 8.088,
+        "bias": -0.06
+      },
+      "history_mean": {
+        "n": 9,
+        "mae": 6.9011,
+        "rmse": 8.1249,
+        "bias": -0.0669
+      },
+      "last_game": {
+        "n": 9,
+        "mae": 10.6978,
+        "rmse": 12.7358,
+        "bias": 0.6756
+      }
+    },
+    {
+      "week": 13,
+      "n": 13,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 13,
+        "mae": 3.5887,
+        "rmse": 5.2253,
+        "bias": -1.3772
+      },
+      "history_mean": {
+        "n": 13,
+        "mae": 4.1831,
+        "rmse": 5.8476,
+        "bias": -1.3679
+      },
+      "last_game": {
+        "n": 13,
+        "mae": 4.5585,
+        "rmse": 6.1671,
+        "bias": -1.4877
+      }
+    },
+    {
+      "week": 14,
+      "n": 11,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 11,
+        "mae": 4.7305,
+        "rmse": 5.5077,
+        "bias": -1.0945
+      },
+      "history_mean": {
+        "n": 11,
+        "mae": 4.7265,
+        "rmse": 5.5288,
+        "bias": -1.6948
+      },
+      "last_game": {
+        "n": 11,
+        "mae": 6.8309,
+        "rmse": 8.3005,
+        "bias": 0.8418
+      }
+    },
+    {
+      "week": 15,
+      "n": 14,
+      "missing_outcomes": 0,
+      "model": {
+        "n": 14,
+        "mae": 9.9548,
+        "rmse": 11.8196,
+        "bias": -2.5435
+      },
+      "history_mean": {
+        "n": 14,
+        "mae": 10.3035,
+        "rmse": 12.5278,
+        "bias": -2.7758
+      },
+      "last_game": {
+        "n": 14,
+        "mae": 9.4857,
+        "rmse": 11.0769,
+        "bias": -2.0143
+      }
+    },
+    {
+      "week": 16,
+      "n": 13,
+      "missing_outcomes": 1,
+      "model": {
+        "n": 13,
+        "mae": 5.8458,
+        "rmse": 6.6395,
+        "bias": 1.8251
+      },
+      "history_mean": {
+        "n": 13,
+        "mae": 5.6943,
+        "rmse": 7.0892,
+        "bias": 1.2835
+      },
+      "last_game": {
+        "n": 13,
+        "mae": 8.0169,
+        "rmse": 11.2134,
+        "bias": 3.9246
+      }
+    }
+  ],
+  "positions": {
+    "QB": {
+      "n": 20,
+      "mae": 6.3094,
+      "rmse": 7.9328,
+      "bias": -1.1313
+    },
+    "RB": {
+      "n": 46,
+      "mae": 5.9624,
+      "rmse": 7.1548,
+      "bias": 1.1865
+    },
+    "WR": {
+      "n": 35,
+      "mae": 6.8257,
+      "rmse": 8.962,
+      "bias": -2.104
+    },
+    "TE": {
+      "n": 20,
+      "mae": 5.053,
+      "rmse": 5.97,
+      "bias": 0.16
+    }
+  },
+  "missing_outcomes": 3,
+  "records": [
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 6,
+      "position": "RB",
+      "projection": 25.8847,
+      "baseline": 26.8,
+      "last_game": 16.1,
+      "actual": 25.2,
+      "history_end": 5
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 6,
+      "position": "WR",
+      "projection": 15.3283,
+      "baseline": 14.2667,
+      "last_game": 20.7,
+      "actual": 4.4,
+      "history_end": 5
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 6,
+      "position": "RB",
+      "projection": 14.7282,
+      "baseline": 15.0667,
+      "last_game": 9.6,
+      "actual": 14.9,
+      "history_end": 5
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 6,
+      "position": "QB",
+      "projection": 14.2575,
+      "baseline": 14.8,
+      "last_game": 11.76,
+      "actual": 17.76,
+      "history_end": 5
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 6,
+      "position": "RB",
+      "projection": 11.8241,
+      "baseline": 11.2667,
+      "last_game": 13.0,
+      "actual": 4.6,
+      "history_end": 5
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 6,
+      "position": "TE",
+      "projection": 4.3932,
+      "baseline": 4.6667,
+      "last_game": 2.0,
+      "actual": 8.8,
+      "history_end": 5
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 7,
+      "position": "RB",
+      "projection": 25.6991,
+      "baseline": 26.4,
+      "last_game": 25.2,
+      "actual": 24.7,
+      "history_end": 6
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 7,
+      "position": "QB",
+      "projection": 15.4185,
+      "baseline": 15.54,
+      "last_game": 17.76,
+      "actual": 13.04,
+      "history_end": 6
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 7,
+      "position": "RB",
+      "projection": 14.7978,
+      "baseline": 15.025,
+      "last_game": 14.9,
+      "actual": 5.4,
+      "history_end": 6
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 7,
+      "position": "RB",
+      "projection": 13.9161,
+      "baseline": 15.0,
+      "last_game": 5.8,
+      "actual": 19.1,
+      "history_end": 5
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 7,
+      "position": "WR",
+      "projection": 11.7313,
+      "baseline": 11.8,
+      "last_game": 4.4,
+      "actual": 9.0,
+      "history_end": 6
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 7,
+      "position": "QB",
+      "projection": 10.0517,
+      "baseline": 10.0333,
+      "last_game": 12.4,
+      "actual": 3.96,
+      "history_end": 5
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 7,
+      "position": "TE",
+      "projection": 10.0087,
+      "baseline": 9.6333,
+      "last_game": 11.5,
+      "actual": 3.7,
+      "history_end": 5
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 7,
+      "position": "RB",
+      "projection": 9.4522,
+      "baseline": 9.6,
+      "last_game": 4.6,
+      "actual": 16.2,
+      "history_end": 6
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 7,
+      "position": "WR",
+      "projection": 8.7648,
+      "baseline": 9.2667,
+      "last_game": 7.4,
+      "actual": 0.3,
+      "history_end": 6
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 7,
+      "position": "TE",
+      "projection": 5.8374,
+      "baseline": 5.7,
+      "last_game": 8.8,
+      "actual": 12.0,
+      "history_end": 6
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 8,
+      "position": "RB",
+      "projection": 25.4477,
+      "baseline": 26.06,
+      "last_game": 24.7,
+      "actual": 14.2,
+      "history_end": 7
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 8,
+      "position": "RB",
+      "projection": 15.6459,
+      "baseline": 16.025,
+      "last_game": 19.1,
+      "actual": 10.5,
+      "history_end": 7
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 8,
+      "position": "QB",
+      "projection": 14.7507,
+      "baseline": 15.04,
+      "last_game": 13.04,
+      "actual": 17.32,
+      "history_end": 7
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 8,
+      "position": "RB",
+      "projection": 12.1478,
+      "baseline": 13.1,
+      "last_game": 5.4,
+      "actual": 15.2,
+      "history_end": 7
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 8,
+      "position": "RB",
+      "projection": 11.3688,
+      "baseline": 10.92,
+      "last_game": 16.2,
+      "actual": 13.9,
+      "history_end": 7
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 8,
+      "position": "WR",
+      "projection": 9.9042,
+      "baseline": 8.9333,
+      "last_game": 18.6,
+      "actual": 4.9,
+      "history_end": 6
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 8,
+      "position": "QB",
+      "projection": 8.0699,
+      "baseline": 8.515,
+      "last_game": 3.96,
+      "actual": 24.76,
+      "history_end": 7
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 8,
+      "position": "TE",
+      "projection": 7.9418,
+      "baseline": 8.15,
+      "last_game": 3.7,
+      "actual": 20.0,
+      "history_end": 7
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 8,
+      "position": "TE",
+      "projection": 7.5757,
+      "baseline": 6.96,
+      "last_game": 12.0,
+      "actual": 11.2,
+      "history_end": 7
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 8,
+      "position": "WR",
+      "projection": 6.0323,
+      "baseline": 7.025,
+      "last_game": 0.3,
+      "actual": 3.9,
+      "history_end": 7
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 9,
+      "position": "RB",
+      "projection": 24.0288,
+      "baseline": 24.3333,
+      "last_game": 21.4,
+      "actual": 16.6,
+      "history_end": 8
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 9,
+      "position": "RB",
+      "projection": 22.5975,
+      "baseline": 24.0833,
+      "last_game": 14.2,
+      "actual": 25.8,
+      "history_end": 8
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 9,
+      "position": "QB",
+      "projection": 15.4224,
+      "baseline": 15.42,
+      "last_game": 17.32,
+      "actual": 20.34,
+      "history_end": 8
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 9,
+      "position": "RB",
+      "projection": 14.2062,
+      "baseline": 14.92,
+      "last_game": 10.5,
+      "actual": 10.2,
+      "history_end": 8
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 9,
+      "position": "RB",
+      "projection": 12.975,
+      "baseline": 13.45,
+      "last_game": 15.2,
+      "actual": 24.5,
+      "history_end": 8
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 9,
+      "position": "QB",
+      "projection": 12.8141,
+      "baseline": 11.764,
+      "last_game": 24.76,
+      "actual": 17.92,
+      "history_end": 8
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 9,
+      "position": "RB",
+      "projection": 11.9953,
+      "baseline": 11.4167,
+      "last_game": 13.9,
+      "actual": 13.4,
+      "history_end": 8
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 9,
+      "position": "TE",
+      "projection": 11.3643,
+      "baseline": 10.52,
+      "last_game": 20.0,
+      "actual": 15.0,
+      "history_end": 8
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 9,
+      "position": "TE",
+      "projection": 8.4739,
+      "baseline": 7.6667,
+      "last_game": 11.2,
+      "actual": 1.0,
+      "history_end": 8
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 9,
+      "position": "WR",
+      "projection": 8.2375,
+      "baseline": 7.925,
+      "last_game": 4.9,
+      "actual": 5.6,
+      "history_end": 8
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 9,
+      "position": "WR",
+      "projection": 6.0656,
+      "baseline": 5.9667,
+      "last_game": 7.4,
+      "actual": 18.6,
+      "history_end": 8
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 9,
+      "position": "WR",
+      "projection": 5.4731,
+      "baseline": 6.4,
+      "last_game": 3.9,
+      "actual": 24.6,
+      "history_end": 8
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 10,
+      "position": "RB",
+      "projection": 23.1895,
+      "baseline": 24.3286,
+      "last_game": 25.8,
+      "actual": 13.6,
+      "history_end": 9
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 10,
+      "position": "RB",
+      "projection": 21.6252,
+      "baseline": 22.4,
+      "last_game": 16.6,
+      "actual": 16.0,
+      "history_end": 9
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 10,
+      "position": "QB",
+      "projection": 16.4427,
+      "baseline": 16.1229,
+      "last_game": 20.34,
+      "actual": 4.04,
+      "history_end": 9
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 10,
+      "position": "RB",
+      "projection": 15.8043,
+      "baseline": 15.0286,
+      "last_game": 24.5,
+      "actual": 13.4,
+      "history_end": 9
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 10,
+      "position": "QB",
+      "projection": 14.0708,
+      "baseline": 12.79,
+      "last_game": 17.92,
+      "actual": 9.72,
+      "history_end": 9
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 10,
+      "position": "RB",
+      "projection": 13.2149,
+      "baseline": 14.1333,
+      "last_game": 10.2,
+      "actual": 11.1,
+      "history_end": 9
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 10,
+      "position": "RB",
+      "projection": 12.638,
+      "baseline": 11.7,
+      "last_game": 13.4,
+      "actual": 19.8,
+      "history_end": 9
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 10,
+      "position": "TE",
+      "projection": 12.2545,
+      "baseline": 11.2667,
+      "last_game": 15.0,
+      "actual": 16.4,
+      "history_end": 9
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 10,
+      "position": "WR",
+      "projection": 10.4145,
+      "baseline": 9.4333,
+      "last_game": 24.6,
+      "actual": 7.6,
+      "history_end": 9
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 10,
+      "position": "WR",
+      "projection": 10.138,
+      "baseline": 9.125,
+      "last_game": 18.6,
+      "actual": 6.1,
+      "history_end": 9
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 10,
+      "position": "WR",
+      "projection": 7.4769,
+      "baseline": 7.46,
+      "last_game": 5.6,
+      "actual": 6.9,
+      "history_end": 9
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 10,
+      "position": "TE",
+      "projection": 6.669,
+      "baseline": 6.7143,
+      "last_game": 1.0,
+      "actual": 5.1,
+      "history_end": 9
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 11,
+      "position": "RB",
+      "projection": 20.5297,
+      "baseline": 22.9875,
+      "last_game": 13.6,
+      "actual": 10.5,
+      "history_end": 10
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 11,
+      "position": "RB",
+      "projection": 20.0676,
+      "baseline": 21.12,
+      "last_game": 16.0,
+      "actual": 34.3,
+      "history_end": 10
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 11,
+      "position": "RB",
+      "projection": 14.993,
+      "baseline": 14.825,
+      "last_game": 13.4,
+      "actual": 10.9,
+      "history_end": 10
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 11,
+      "position": "QB",
+      "projection": 13.6046,
+      "baseline": 14.6125,
+      "last_game": 4.04,
+      "actual": 16.06,
+      "history_end": 10
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 11,
+      "position": "TE",
+      "projection": 13.4995,
+      "baseline": 12.0,
+      "last_game": 16.4,
+      "actual": 1.8,
+      "history_end": 10
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 11,
+      "position": "QB",
+      "projection": 12.9884,
+      "baseline": 12.3514,
+      "last_game": 9.72,
+      "actual": 27.8,
+      "history_end": 10
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 11,
+      "position": "RB",
+      "projection": 12.3707,
+      "baseline": 13.7,
+      "last_game": 11.1,
+      "actual": 4.8,
+      "history_end": 10
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 11,
+      "position": "WR",
+      "projection": 9.4735,
+      "baseline": 9.1714,
+      "last_game": 7.6,
+      "actual": 4.4,
+      "history_end": 10
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 11,
+      "position": "WR",
+      "projection": 8.9497,
+      "baseline": 8.52,
+      "last_game": 6.1,
+      "actual": 10.2,
+      "history_end": 10
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 11,
+      "position": "WR",
+      "projection": 7.3284,
+      "baseline": 7.3667,
+      "last_game": 6.9,
+      "actual": 6.1,
+      "history_end": 10
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 11,
+      "position": "TE",
+      "projection": 6.3262,
+      "baseline": 6.5125,
+      "last_game": 5.1,
+      "actual": 15.7,
+      "history_end": 10
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 12,
+      "position": "RB",
+      "projection": 23.762,
+      "baseline": 23.3167,
+      "last_game": 34.3,
+      "actual": 7.0,
+      "history_end": 11
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 12,
+      "position": "RB",
+      "projection": 18.4323,
+      "baseline": 21.6,
+      "last_game": 10.5,
+      "actual": 14.0,
+      "history_end": 11
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 12,
+      "position": "QB",
+      "projection": 16.8226,
+      "baseline": 14.2825,
+      "last_game": 27.8,
+      "actual": 19.22,
+      "history_end": 11
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 12,
+      "position": "RB",
+      "projection": 14.1445,
+      "baseline": 12.7125,
+      "last_game": 19.8,
+      "actual": 7.4,
+      "history_end": 10
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 12,
+      "position": "TE",
+      "projection": 10.6479,
+      "baseline": 10.725,
+      "last_game": 1.8,
+      "actual": 9.2,
+      "history_end": 11
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 12,
+      "position": "RB",
+      "projection": 10.4769,
+      "baseline": 12.5875,
+      "last_game": 4.8,
+      "actual": 18.4,
+      "history_end": 11
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 12,
+      "position": "TE",
+      "projection": 8.7051,
+      "baseline": 7.5333,
+      "last_game": 15.7,
+      "actual": 12.8,
+      "history_end": 11
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 12,
+      "position": "WR",
+      "projection": 8.4245,
+      "baseline": 8.575,
+      "last_game": 4.4,
+      "actual": 12.0,
+      "history_end": 11
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 12,
+      "position": "WR",
+      "projection": 7.1638,
+      "baseline": 7.1857,
+      "last_game": 6.1,
+      "actual": 19.1,
+      "history_end": 11
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 13,
+      "position": "RB",
+      "projection": 19.5078,
+      "baseline": 20.9857,
+      "last_game": 7.0,
+      "actual": 19.9,
+      "history_end": 12
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 13,
+      "position": "QB",
+      "projection": 17.4218,
+      "baseline": 14.8311,
+      "last_game": 19.22,
+      "actual": 15.62,
+      "history_end": 12
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 13,
+      "position": "RB",
+      "projection": 17.3292,
+      "baseline": 20.84,
+      "last_game": 14.0,
+      "actual": 12.6,
+      "history_end": 12
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 13,
+      "position": "QB",
+      "projection": 14.2994,
+      "baseline": 14.7733,
+      "last_game": 16.06,
+      "actual": 14.0,
+      "history_end": 11
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 13,
+      "position": "RB",
+      "projection": 14.2063,
+      "baseline": 14.3889,
+      "last_game": 10.9,
+      "actual": 13.9,
+      "history_end": 11
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 13,
+      "position": "RB",
+      "projection": 12.6184,
+      "baseline": 13.2333,
+      "last_game": 18.4,
+      "actual": 8.3,
+      "history_end": 12
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 13,
+      "position": "RB",
+      "projection": 12.5196,
+      "baseline": 12.1222,
+      "last_game": 7.4,
+      "actual": 9.6,
+      "history_end": 12
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 13,
+      "position": "WR",
+      "projection": 10.5493,
+      "baseline": 10.9167,
+      "last_game": 9.3,
+      "actual": 21.8,
+      "history_end": 12
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 13,
+      "position": "TE",
+      "projection": 10.2791,
+      "baseline": 10.5556,
+      "last_game": 9.2,
+      "actual": 10.3,
+      "history_end": 12
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 13,
+      "position": "WR",
+      "projection": 10.1297,
+      "baseline": 8.675,
+      "last_game": 19.1,
+      "actual": 21.8,
+      "history_end": 12
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 13,
+      "position": "TE",
+      "projection": 9.593,
+      "baseline": 8.06,
+      "last_game": 12.8,
+      "actual": 11.0,
+      "history_end": 12
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 13,
+      "position": "WR",
+      "projection": 9.3137,
+      "baseline": 8.9556,
+      "last_game": 12.0,
+      "actual": 11.0,
+      "history_end": 12
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 13,
+      "position": "WR",
+      "projection": 9.2491,
+      "baseline": 8.8,
+      "last_game": 10.2,
+      "actual": 15.1,
+      "history_end": 11
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 14,
+      "position": "QB",
+      "projection": 17.3402,
+      "baseline": 14.91,
+      "last_game": 15.62,
+      "actual": 20.8,
+      "history_end": 13
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 14,
+      "position": "QB",
+      "projection": 14.1329,
+      "baseline": 14.696,
+      "last_game": 14.0,
+      "actual": 17.56,
+      "history_end": 13
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 14,
+      "position": "RB",
+      "projection": 14.1202,
+      "baseline": 14.34,
+      "last_game": 13.9,
+      "actual": 10.4,
+      "history_end": 13
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 14,
+      "position": "WR",
+      "projection": 13.6259,
+      "baseline": 12.4714,
+      "last_game": 21.8,
+      "actual": 8.9,
+      "history_end": 13
+    },
+    {
+      "id": "00-0030035",
+      "name": "Adam Thielen",
+      "week": 14,
+      "position": "WR",
+      "projection": 13.4329,
+      "baseline": 12.8667,
+      "last_game": 19.9,
+      "actual": 14.7,
+      "history_end": 13
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 14,
+      "position": "WR",
+      "projection": 12.5219,
+      "baseline": 10.1333,
+      "last_game": 21.8,
+      "actual": 4.5,
+      "history_end": 13
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 14,
+      "position": "RB",
+      "projection": 12.098,
+      "baseline": 11.87,
+      "last_game": 9.6,
+      "actual": 20.2,
+      "history_end": 13
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 14,
+      "position": "RB",
+      "projection": 11.4178,
+      "baseline": 12.74,
+      "last_game": 8.3,
+      "actual": 15.4,
+      "history_end": 13
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 14,
+      "position": "WR",
+      "projection": 10.7958,
+      "baseline": 9.7,
+      "last_game": 15.1,
+      "actual": 21.4,
+      "history_end": 13
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 14,
+      "position": "TE",
+      "projection": 10.53,
+      "baseline": 10.53,
+      "last_game": 10.3,
+      "actual": 7.0,
+      "history_end": 13
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 14,
+      "position": "WR",
+      "projection": 10.0044,
+      "baseline": 9.16,
+      "last_game": 11.0,
+      "actual": 11.2,
+      "history_end": 13
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 15,
+      "position": "RB",
+      "projection": 19.4599,
+      "baseline": 20.85,
+      "last_game": 19.9,
+      "actual": 8.1,
+      "history_end": 13
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 15,
+      "position": "QB",
+      "projection": 17.7379,
+      "baseline": 15.4455,
+      "last_game": 20.8,
+      "actual": 8.2,
+      "history_end": 14
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 15,
+      "position": "RB",
+      "projection": 16.18,
+      "baseline": 20.0909,
+      "last_game": 12.6,
+      "actual": 6.7,
+      "history_end": 13
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 15,
+      "position": "QB",
+      "projection": 14.9892,
+      "baseline": 14.9564,
+      "last_game": 17.56,
+      "actual": 30.06,
+      "history_end": 14
+    },
+    {
+      "id": "00-0030035",
+      "name": "Adam Thielen",
+      "week": 15,
+      "position": "WR",
+      "projection": 13.8221,
+      "baseline": 13.325,
+      "last_game": 14.7,
+      "actual": 7.6,
+      "history_end": 14
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 15,
+      "position": "RB",
+      "projection": 13.8004,
+      "baseline": 12.6273,
+      "last_game": 20.2,
+      "actual": 28.3,
+      "history_end": 14
+    },
+    {
+      "id": "00-0033906",
+      "name": "Alvin Kamara",
+      "week": 15,
+      "position": "RB",
+      "projection": 13.5855,
+      "baseline": 13.9818,
+      "last_game": 10.4,
+      "actual": 15.0,
+      "history_end": 14
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 15,
+      "position": "WR",
+      "projection": 13.5295,
+      "baseline": 11.1625,
+      "last_game": 21.4,
+      "actual": 38.3,
+      "history_end": 14
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 15,
+      "position": "RB",
+      "projection": 12.4377,
+      "baseline": 12.9818,
+      "last_game": 15.4,
+      "actual": 17.6,
+      "history_end": 14
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 15,
+      "position": "WR",
+      "projection": 12.2312,
+      "baseline": 12.025,
+      "last_game": 8.9,
+      "actual": 32.4,
+      "history_end": 14
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 15,
+      "position": "WR",
+      "projection": 10.7981,
+      "baseline": 9.57,
+      "last_game": 4.5,
+      "actual": 17.2,
+      "history_end": 14
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 15,
+      "position": "WR",
+      "projection": 10.4465,
+      "baseline": 9.3455,
+      "last_game": 11.2,
+      "actual": 6.1,
+      "history_end": 14
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 15,
+      "position": "TE",
+      "projection": 9.7459,
+      "baseline": 8.3273,
+      "last_game": 11.0,
+      "actual": 3.5,
+      "history_end": 13
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 15,
+      "position": "TE",
+      "projection": 9.3867,
+      "baseline": 10.2091,
+      "last_game": 7.0,
+      "actual": 4.7,
+      "history_end": 14
+    },
+    {
+      "id": "00-0031381",
+      "name": "Davante Adams",
+      "week": 16,
+      "position": "WR",
+      "projection": 19.4901,
+      "baseline": 14.1778,
+      "last_game": 38.3,
+      "actual": 16.3,
+      "history_end": 15
+    },
+    {
+      "id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "week": 16,
+      "position": "QB",
+      "projection": 18.3241,
+      "baseline": 16.215,
+      "last_game": 30.06,
+      "actual": 12.84,
+      "history_end": 15
+    },
+    {
+      "id": "00-0033553",
+      "name": "James Conner",
+      "week": 16,
+      "position": "RB",
+      "projection": 17.0177,
+      "baseline": 13.9333,
+      "last_game": 28.3,
+      "actual": 24.6,
+      "history_end": 15
+    },
+    {
+      "id": "00-0033897",
+      "name": "Joe Mixon",
+      "week": 16,
+      "position": "RB",
+      "projection": 16.7717,
+      "baseline": 19.4333,
+      "last_game": 8.1,
+      "actual": 7.6,
+      "history_end": 15
+    },
+    {
+      "id": "00-0031408",
+      "name": "Mike Evans",
+      "week": 16,
+      "position": "WR",
+      "projection": 16.6946,
+      "baseline": 14.2889,
+      "last_game": 32.4,
+      "actual": 9.4,
+      "history_end": 15
+    },
+    {
+      "id": "00-0026498",
+      "name": "Matthew Stafford",
+      "week": 16,
+      "position": "QB",
+      "projection": 15.4341,
+      "baseline": 14.8417,
+      "last_game": 8.2,
+      "actual": 6.0,
+      "history_end": 15
+    },
+    {
+      "id": "00-0032764",
+      "name": "Derrick Henry",
+      "week": 16,
+      "position": "RB",
+      "projection": 14.3272,
+      "baseline": 18.975,
+      "last_game": 6.7,
+      "actual": 19.9,
+      "history_end": 15
+    },
+    {
+      "id": "00-0033293",
+      "name": "Aaron Jones",
+      "week": 16,
+      "position": "RB",
+      "projection": 13.7192,
+      "baseline": 13.3667,
+      "last_game": 17.6,
+      "actual": 10.8,
+      "history_end": 15
+    },
+    {
+      "id": "00-0030279",
+      "name": "Keenan Allen",
+      "week": 16,
+      "position": "WR",
+      "projection": 12.3818,
+      "baseline": 10.2636,
+      "last_game": 17.2,
+      "actual": 24.6,
+      "history_end": 15
+    },
+    {
+      "id": "00-0030035",
+      "name": "Adam Thielen",
+      "week": 16,
+      "position": "WR",
+      "projection": 12.0386,
+      "baseline": 12.18,
+      "last_game": 7.6,
+      "actual": 12.8,
+      "history_end": 15
+    },
+    {
+      "id": "00-0030564",
+      "name": "DeAndre Hopkins",
+      "week": 16,
+      "position": "WR",
+      "projection": 8.8983,
+      "baseline": 9.075,
+      "last_game": 6.1,
+      "actual": 5.7,
+      "history_end": 15
+    },
+    {
+      "id": "00-0030061",
+      "name": "Zach Ertz",
+      "week": 16,
+      "position": "TE",
+      "projection": 8.1951,
+      "baseline": 7.925,
+      "last_game": 3.5,
+      "actual": 1.7,
+      "history_end": 15
+    },
+    {
+      "id": "00-0030506",
+      "name": "Travis Kelce",
+      "week": 16,
+      "position": "TE",
+      "projection": 8.174,
+      "baseline": 9.75,
+      "last_game": 4.7,
+      "actual": 5.5,
+      "history_end": 15
+    }
+  ],
+  "cohort": "Only predicted, eligible player-weeks with an observed target-week row. Missing rows are excluded, never set to zero.",
+  "limitation": "Curated sample and fixed, uncalibrated heuristic. This does not establish an advantage over professional projections or on unseen seasons.",
+  "parameters": {
+    "min_history": 3,
+    "recent_games": 6,
+    "decay": 0.75,
+    "recent_blend": 0.65
+  }
+}

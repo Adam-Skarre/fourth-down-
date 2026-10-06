@@ -1,0 +1,51 @@
+{
+  "checks_passed": 29,
+  "checks": [
+    "Initial legal starting seven",
+    "No desktop horizontal overflow",
+    "PPR changes the projected total",
+    "Half PPR restores deterministic total",
+    "Search filters rows",
+    "Manual unavailable flag removes player from lineup",
+    "Results reveal opens only on request",
+    "Result modal closes",
+    "Lineup CSV export",
+    "Waiver scenarios computed",
+    "Pickup changes example roster and returns to lineup",
+    "Player comparison shows two histories",
+    "Player selection updates detail",
+    "Audit displays three baselines",
+    "Audit discloses missing outcomes",
+    "Audit CSV export",
+    "Cloud execution limitations visible",
+    "Source fingerprint visible",
+    "Steadier preference shows separate objective",
+    "Week control changes cutoff",
+    "Bye player not selected",
+    "Infeasible roster is explained",
+    "Infeasible roster export disabled",
+    "No mobile horizontal overflow",
+    "waivers mobile fits viewport",
+    "compare mobile fits viewport",
+    "audit mobile fits viewport",
+    "pipeline mobile fits viewport",
+    "No uncaught JavaScript errors"
+  ],
+  "javascript_errors": [],
+  "browser": "Chromium, headless",
+  "desktop_viewport": [
+    1440,
+    1080
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "transport": "HTML/CSS/JS injection plus a fetch-to-real-local-HTTP bridge; direct browser navigation blocked by environment policy.",
+  "not_tested": [
+    "Direct browser-to-loopback navigation in this managed environment",
+    "Browser localStorage persistence (opaque test origin)",
+    "AWS deployment",
+    "Databricks execution"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-10-06",
+  "aws": {
+    "status": "executed",
+    "method": "AWS console browser upload",
+    "bucket": "fourth-down-adam-skarre-20261006",
+    "region": "us-east-2",
+    "files": [
+      "player_games.csv",
+      "projections.csv",
+      "audit.json",
+      "run_manifest.json"
+    ],
+    "uploaded_bytes_display": "43.2 KB",
+    "public_access_blocked": true,
+    "versioning_enabled": true,
+    "encryption": "SSE-S3",
+    "boto3_adapter_executed": false,
+    "cloudformation_executed": false
+  },
+  "databricks": {
+    "status": "executed_user_confirmed",
+    "prepared_notebook": "cloud/databricks/free_edition_run.py",
+    "local_syntax_validation": "passed",
+    "direct_s3_integration": false,
+    "verification": "User reported final PASS \u2014 164 records and 14 forecasts verified",
+    "verification_source": "User confirmation in chat; exported runtime results not yet collected"
+  },
+  "local_tests": {
+    "passed": 103,
+    "failed": 0
+  }
+}

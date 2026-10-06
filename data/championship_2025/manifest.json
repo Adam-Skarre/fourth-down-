@@ -1,0 +1,56 @@
+{
+  "version": "2025-backfield-v1",
+  "compiled_at": "2026-10-06",
+  "source_type": "Manually transcribed published historical statistics, not synthetic",
+  "sha256": "1a125c9cd0df6352581ec40a966caefded7726f18256ba84180e7d0311f6adfc",
+  "records": 64,
+  "players": 4,
+  "season": 2025,
+  "weeks": [
+    1,
+    18
+  ],
+  "precision_note": "Uses published one-decimal PPR values. Montgomery week 5 is rounded 18.2; the extra 0.02 from passing yardage is below source display precision. No calculation claims hundredth-point source precision.",
+  "fields": "standard_points = published PPR minus receptions; half/PPR add 0.5/1.0 per reception. No custom bonuses.",
+  "sources": [
+    {
+      "id": "achane",
+      "name": "De'Von Achane",
+      "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/achane-ppr-points-by-week-2025",
+      "week_mapping_and_box_score_reference": "https://www.nfl.com/players/devon-achane/stats/logs/2025/",
+      "published_total_ppr": 322.8,
+      "observed_games": 16
+    },
+    {
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/david-montgomery-ppr-2025",
+      "week_mapping_and_box_score_reference": "https://www.nfl.com/players/david-montgomery/stats/logs/2025/",
+      "published_total_ppr": 166.9,
+      "observed_games": 17
+    },
+    {
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/rj-harvey-ppr-stats",
+      "week_mapping_and_box_score_reference": "https://www.nfl.com/players/rj-harvey/stats/logs/2025/",
+      "published_total_ppr": 206.6,
+      "observed_games": 17
+    },
+    {
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/stevenson-ppr-points-by-week-2025",
+      "week_mapping_and_box_score_reference": "https://www.nfl.com/players/rhamondre-stevenson/stats/logs/2025/",
+      "published_total_ppr": 178.8,
+      "observed_games": 14
+    }
+  ],
+  "important_reconciliation": [
+    "Stevenson week 2 = 21.2 PPR including a successful two-point conversion.",
+    "Stevenson week 16 = 17.8 PPR including a successful two-point conversion.",
+    "Missing weeks remain absent, never fabricated as zeros.",
+    "StatMuse values and NFL game-log week labels were inspected; this is not an automated source-reconciliation run."
+  ],
+  "point_in_time": "Retrieved retrospectively. Weekly cutoffs prevent future-game feature leakage, but original historical publication vintages and later stat corrections are not reconstructed."
+}

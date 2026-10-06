@@ -1,0 +1,13 @@
+{
+  "season": 2024,
+  "decision_week": 13,
+  "scoring": "half",
+  "history_cutoff_week": 12,
+  "source_sha256": "6c23d4c0e85077f2cc31fed03117f75517a6790dbc4bb1796f37bbf8e5d4f4eb",
+  "files": {
+    "player_games.csv": "6c23d4c0e85077f2cc31fed03117f75517a6790dbc4bb1796f37bbf8e5d4f4eb",
+    "projections.csv": "1ae5027e9143e56dc84f49623224a74963880440269cdefa6a4732a9994afc2e",
+    "audit.json": "2cc507c1681d3f326eefb42c6ece103485d94a1ab1567e349c5440e141b3a1ba"
+  },
+  "cloud_executed": false
+}

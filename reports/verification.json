@@ -1,0 +1,37 @@
+{
+  "project": "Fourth Down \u2014 Fantasy Lineup Lab",
+  "build_date": "2026-10-06",
+  "python_executed": "3.13.5",
+  "platform_executed": "Linux",
+  "unit_api_tests": {
+    "passed": 69,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "ui_smoke_checks": {
+    "passed": 29,
+    "uncaught_js_errors": 0,
+    "method": "HTML/CSS/JS injection plus a fetch-to-real-local-HTTP bridge; direct browser navigation blocked by environment policy."
+  },
+  "static_python_compile": "passed: fourth_down, scripts, cloud",
+  "aws_s3_dry_run": "executed; no AWS network request",
+  "aws_real_execution": false,
+  "databricks_real_execution": false,
+  "github_hosted_ci_execution": false,
+  "remote_nflverse_import_tested": false,
+  "automated_remote_source_reconciliation_tested": false,
+  "historical_reference": {
+    "players": 14,
+    "player_games": 164,
+    "season": 2024,
+    "week_range": [
+      3,
+      16
+    ]
+  },
+  "limits": [
+    "Direct browser navigation blocked by managed environment; UI tests use a real-HTTP bridge.",
+    "Cloud extensions are not deployed.",
+    "Data fixture is curated and not a live feed."
+  ]
+}

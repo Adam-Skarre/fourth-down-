@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fourth-down-lineup-lab"
+version = "1.2.0"
+description = "Explainable fantasy-football forecasting, lineup optimization, and model-audit application."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Adam Skarre"}]
+dependencies = []
+
+[project.optional-dependencies]
+cloud = ["boto3>=1.35"]
+dev = ["playwright>=1.50"]
+
+[project.scripts]
+fourth-down = "fourth_down.__main__:main"
+
+[tool.setuptools]
+packages = ["fourth_down"]

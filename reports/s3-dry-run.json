@@ -1,0 +1,29 @@
+{
+  "mode": "dry-run",
+  "uploads": [
+    {
+      "path": "data/processed/player_games.csv",
+      "bucket": "fourth-down-example",
+      "key": "fourth-down/reference/player_games.csv",
+      "sha256": "6c23d4c0e85077f2cc31fed03117f75517a6790dbc4bb1796f37bbf8e5d4f4eb"
+    },
+    {
+      "path": "data/processed/projections.csv",
+      "bucket": "fourth-down-example",
+      "key": "fourth-down/reference/projections.csv",
+      "sha256": "1ae5027e9143e56dc84f49623224a74963880440269cdefa6a4732a9994afc2e"
+    },
+    {
+      "path": "data/processed/audit.json",
+      "bucket": "fourth-down-example",
+      "key": "fourth-down/reference/audit.json",
+      "sha256": "2cc507c1681d3f326eefb42c6ece103485d94a1ab1567e349c5440e141b3a1ba"
+    },
+    {
+      "path": "data/processed/run_manifest.json",
+      "bucket": "fourth-down-example",
+      "key": "fourth-down/reference/run_manifest.json",
+      "sha256": "725cab679742eb8dd7c828a30d7d6a31d7e400ba6e189bb1b166e41e00c63aa5"
+    }
+  ]
+}

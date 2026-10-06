@@ -1,0 +1,13 @@
+FOURTH DOWN — DATABRICKS REPRODUCTION STEPS
+
+1. In your Databricks workspace, open Workspace.
+2. Use Import (typically in the folder menu), select File, and import free_edition_run.py.
+3. Open the imported notebook, select Serverless if prompted, and click Run all.
+4. The last cell should show PASS — 164 records and 14 forecasts verified.
+5. Download verified results from that cell and preserve the JSON as execution evidence.
+
+No keys, packages, paths, or account IDs need entering. The notebook uses the current catalog and creates a dedicated fourth_down_portfolio schema. Reruns replace only its player_games and projections tables.
+
+AWS is already set up: fourth-down-adam-skarre-20261006, region us-east-2. Four files were uploaded through the AWS console. Public access is blocked, S3 encryption is enabled, and bucket versioning was enabled.
+
+The notebook has passed local Python syntax validation and the user has reported a successful run in Databricks (164 records / 14 forecasts); the runtime export has not yet been collected. It contains an exact embedded copy of the S3 dataset; it does NOT connect directly to S3. The forecast remains a fixed heuristic and does not establish predictive superiority.

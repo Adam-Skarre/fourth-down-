@@ -1,0 +1,2 @@
+# Optional browser smoke harness only; core tests use unittest.
+playwright>=1.45,<2

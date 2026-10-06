@@ -1,0 +1,1506 @@
+{
+  "title": "AJ 2025 \u2014 championship-roster research case",
+  "version": "1.1.0",
+  "analysis_created": "2026-10-06",
+  "scoring": "ppr",
+  "status": "Retrospective, selected-roster diagnostic. Not a causal championship result.",
+  "roster": {
+    "season": 2025,
+    "team_label": "AJ \u2014 2025 championship roster",
+    "observed_team_result": {
+      "finish": 1,
+      "listed_record": "9-5-0",
+      "evidence": "User-provided league-history screenshot",
+      "algorithm_attribution": false
+    },
+    "draft_roster": [
+      {
+        "id": "chase",
+        "name": "Ja'Marr Chase",
+        "position": "WR",
+        "team_at_draft": "CIN",
+        "printed_bye": 10,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "achane",
+        "name": "De'Von Achane",
+        "position": "RB",
+        "team_at_draft": "MIA",
+        "printed_bye": 12,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": true
+      },
+      {
+        "id": "kittle",
+        "name": "George Kittle",
+        "position": "TE",
+        "team_at_draft": "SF",
+        "printed_bye": 14,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "mahomes",
+        "name": "Patrick Mahomes",
+        "position": "QB",
+        "team_at_draft": "KC",
+        "printed_bye": 10,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "montgomery",
+        "name": "David Montgomery",
+        "position": "RB",
+        "team_at_draft": "DET",
+        "printed_bye": 8,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": true
+      },
+      {
+        "id": "harvey",
+        "name": "RJ Harvey",
+        "position": "RB",
+        "team_at_draft": "DEN",
+        "printed_bye": 12,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": true
+      },
+      {
+        "id": "williams",
+        "name": "Jameson Williams",
+        "position": "WR",
+        "team_at_draft": "DET",
+        "printed_bye": 8,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "olave",
+        "name": "Chris Olave",
+        "position": "WR",
+        "team_at_draft": "NO",
+        "printed_bye": 11,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "ekeler",
+        "name": "Austin Ekeler",
+        "position": "RB",
+        "team_at_draft": "WAS",
+        "printed_bye": 12,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "reed",
+        "name": "Jayden Reed",
+        "position": "WR",
+        "team_at_draft": "GB",
+        "printed_bye": 5,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "guerendo",
+        "name": "Isaac Guerendo",
+        "position": "RB",
+        "team_at_draft": "SF",
+        "printed_bye": 14,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "legette",
+        "name": "Xavier Legette",
+        "position": "WR",
+        "team_at_draft": "CAR",
+        "printed_bye": 14,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "bates",
+        "name": "Jake Bates",
+        "position": "K",
+        "team_at_draft": "DET",
+        "printed_bye": 8,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "cardinals",
+        "name": "Arizona Cardinals",
+        "position": "DST",
+        "team_at_draft": "ARI",
+        "printed_bye": 8,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "sample",
+        "name": "Drew Sample",
+        "position": "TE",
+        "team_at_draft": "CIN",
+        "printed_bye": 10,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "lawrence",
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "team_at_draft": "JAX",
+        "printed_bye": 8,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      },
+      {
+        "id": "watson",
+        "name": "Christian Watson",
+        "position": "WR",
+        "team_at_draft": "GB",
+        "printed_bye": 5,
+        "source": "User-provided draft-board photo",
+        "statistical_data_bundled": false
+      }
+    ],
+    "reported_additions": [
+      {
+        "id": "stevenson",
+        "name": "Rhamondre Stevenson",
+        "position": "RB",
+        "team": "NE",
+        "source": "User reports playoff addition",
+        "acquisition_week": null,
+        "dropped_player": null,
+        "statistical_data_bundled": true
+      }
+    ],
+    "unknowns": [
+      "League scoring rules",
+      "Exact starting-slot requirements",
+      "Weekly lineups and opponents",
+      "Injury/active reports as available before kickoff",
+      "All add/drop dates, including Stevenson acquisition"
+    ],
+    "scenario_defaults": {
+      "scoring": "ppr",
+      "comparison_weeks": [
+        15,
+        16,
+        17
+      ],
+      "stevenson_assumed_available_from": 15,
+      "confirmation": "Scenario assumptions, not verified league settings or transaction dates"
+    },
+    "scope": "Complete personal roster inventory; four-running-back statistical diagnostic, not a complete team replay."
+  },
+  "data": {
+    "records": 64,
+    "players": 4,
+    "sha256": "1a125c9cd0df6352581ec40a966caefded7726f18256ba84180e7d0311f6adfc",
+    "manifest": {
+      "version": "2025-backfield-v1",
+      "compiled_at": "2026-10-06",
+      "source_type": "Manually transcribed published historical statistics, not synthetic",
+      "sha256": "1a125c9cd0df6352581ec40a966caefded7726f18256ba84180e7d0311f6adfc",
+      "records": 64,
+      "players": 4,
+      "season": 2025,
+      "weeks": [
+        1,
+        18
+      ],
+      "precision_note": "Uses published one-decimal PPR values. Montgomery week 5 is rounded 18.2; the extra 0.02 from passing yardage is below source display precision. No calculation claims hundredth-point source precision.",
+      "fields": "standard_points = published PPR minus receptions; half/PPR add 0.5/1.0 per reception. No custom bonuses.",
+      "sources": [
+        {
+          "id": "achane",
+          "name": "De'Von Achane",
+          "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/achane-ppr-points-by-week-2025",
+          "week_mapping_and_box_score_reference": "https://www.nfl.com/players/devon-achane/stats/logs/2025/",
+          "published_total_ppr": 322.8,
+          "observed_games": 16
+        },
+        {
+          "id": "montgomery",
+          "name": "David Montgomery",
+          "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/david-montgomery-ppr-2025",
+          "week_mapping_and_box_score_reference": "https://www.nfl.com/players/david-montgomery/stats/logs/2025/",
+          "published_total_ppr": 166.9,
+          "observed_games": 17
+        },
+        {
+          "id": "harvey",
+          "name": "RJ Harvey",
+          "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/rj-harvey-ppr-stats",
+          "week_mapping_and_box_score_reference": "https://www.nfl.com/players/rj-harvey/stats/logs/2025/",
+          "published_total_ppr": 206.6,
+          "observed_games": 17
+        },
+        {
+          "id": "stevenson",
+          "name": "Rhamondre Stevenson",
+          "fantasy_points_and_receptions": "https://www.statmuse.com/nfl/ask/stevenson-ppr-points-by-week-2025",
+          "week_mapping_and_box_score_reference": "https://www.nfl.com/players/rhamondre-stevenson/stats/logs/2025/",
+          "published_total_ppr": 178.8,
+          "observed_games": 14
+        }
+      ],
+      "important_reconciliation": [
+        "Stevenson week 2 = 21.2 PPR including a successful two-point conversion.",
+        "Stevenson week 16 = 17.8 PPR including a successful two-point conversion.",
+        "Missing weeks remain absent, never fabricated as zeros.",
+        "StatMuse values and NFL game-log week labels were inspected; this is not an automated source-reconciliation run."
+      ],
+      "point_in_time": "Retrieved retrospectively. Weekly cutoffs prevent future-game feature leakage, but original historical publication vintages and later stat corrections are not reconstructed."
+    }
+  },
+  "parameters": {
+    "original_recent_blend": 0.65,
+    "recent_games": 6,
+    "decay": 0.75,
+    "minimum_prior_games": 3
+  },
+  "fit": {
+    "alpha": 0.0,
+    "unconstrained_alpha": -2.150064414975003,
+    "n": 25,
+    "training_weeks": [
+      4,
+      10
+    ],
+    "max_training_outcome_week": 10,
+    "objective": "Minimize squared forecast error on early-season observed player-weeks",
+    "fallback": false
+  },
+  "training": {
+    "weeks": [
+      4,
+      10
+    ],
+    "n": 25,
+    "methods": {
+      "original": {
+        "label": "Original 65/35 model",
+        "n": 25,
+        "mae": 6.9067,
+        "rmse": 8.8866,
+        "bias": -0.3862
+      },
+      "fitted": {
+        "label": "Early-season fitted blend",
+        "n": 25,
+        "mae": 6.7151,
+        "rmse": 8.5822,
+        "bias": -0.5546
+      },
+      "history": {
+        "label": "History-average baseline",
+        "n": 25,
+        "mae": 6.7151,
+        "rmse": 8.5822,
+        "bias": -0.5546
+      },
+      "recent_three": {
+        "label": "Last-three-game baseline",
+        "n": 25,
+        "mae": 7.188,
+        "rmse": 9.301,
+        "bias": -0.34
+      },
+      "last_game": {
+        "label": "Last-game baseline",
+        "n": 25,
+        "mae": 9.944,
+        "rmse": 12.5301,
+        "bias": -0.224
+      }
+    },
+    "cohort": "Same observed, non-bye, prior-history-eligible player-weeks for all methods. Missing outcomes excluded."
+  },
+  "later_evaluation": {
+    "weeks": [
+      11,
+      17
+    ],
+    "n": 23,
+    "methods": {
+      "original": {
+        "label": "Original 65/35 model",
+        "n": 23,
+        "mae": 5.3912,
+        "rmse": 6.4262,
+        "bias": -0.9068
+      },
+      "fitted": {
+        "label": "Early-season fitted blend",
+        "n": 23,
+        "mae": 5.3582,
+        "rmse": 6.8389,
+        "bias": -1.262
+      },
+      "history": {
+        "label": "History-average baseline",
+        "n": 23,
+        "mae": 5.3582,
+        "rmse": 6.8389,
+        "bias": -1.262
+      },
+      "recent_three": {
+        "label": "Last-three-game baseline",
+        "n": 23,
+        "mae": 5.687,
+        "rmse": 6.8454,
+        "bias": -0.4261
+      },
+      "last_game": {
+        "label": "Last-game baseline",
+        "n": 23,
+        "mae": 5.7304,
+        "rmse": 7.3941,
+        "bias": -0.4174
+      }
+    },
+    "cohort": "Same observed, non-bye, prior-history-eligible player-weeks for all methods. Missing outcomes excluded."
+  },
+  "player_forecasts": [
+    {
+      "week": 4,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 3,
+      "prior_games": 3,
+      "history": 19.6,
+      "recent_weighted": 19.473,
+      "recent_three": 19.6,
+      "last_game": 16.1,
+      "original": 19.5174,
+      "actual": 17.1,
+      "fitted": 19.6
+    },
+    {
+      "week": 4,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 3,
+      "prior_games": 3,
+      "history": 16.9333,
+      "recent_weighted": 18.9811,
+      "recent_three": 16.9333,
+      "last_game": 29.4,
+      "original": 18.2644,
+      "actual": 1.2,
+      "fitted": 16.9333
+    },
+    {
+      "week": 4,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 3,
+      "prior_games": 3,
+      "history": 10.1667,
+      "recent_weighted": 10.0081,
+      "recent_three": 10.1667,
+      "last_game": 4.6,
+      "original": 10.0636,
+      "actual": 5.1,
+      "fitted": 10.1667
+    },
+    {
+      "week": 4,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 3,
+      "prior_games": 3,
+      "history": 5.3,
+      "recent_weighted": 5.0135,
+      "recent_three": 5.3,
+      "last_game": 4.6,
+      "original": 5.1138,
+      "actual": 19.8,
+      "fitted": 5.3
+    },
+    {
+      "week": 5,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 4,
+      "prior_games": 4,
+      "history": 18.975,
+      "recent_weighted": 18.6051,
+      "recent_three": 19.8,
+      "last_game": 17.1,
+      "original": 18.7346,
+      "actual": 16.6,
+      "fitted": 18.975
+    },
+    {
+      "week": 5,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 4,
+      "prior_games": 4,
+      "history": 13.0,
+      "recent_weighted": 12.4783,
+      "recent_three": 14.5667,
+      "last_game": 1.2,
+      "original": 12.6609,
+      "actual": 18.2,
+      "fitted": 13.0
+    },
+    {
+      "week": 5,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 4,
+      "prior_games": 4,
+      "history": 8.925,
+      "recent_weighted": 10.4211,
+      "recent_three": 9.2667,
+      "last_game": 19.8,
+      "original": 9.8975,
+      "actual": 6.0,
+      "fitted": 8.925
+    },
+    {
+      "week": 5,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 4,
+      "prior_games": 4,
+      "history": 8.9,
+      "recent_weighted": 8.2131,
+      "recent_three": 10.3,
+      "last_game": 5.1,
+      "original": 8.4535,
+      "actual": 14.7,
+      "fitted": 8.9
+    },
+    {
+      "week": 6,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 5,
+      "prior_games": 5,
+      "history": 18.5,
+      "recent_weighted": 17.9479,
+      "recent_three": 16.6,
+      "last_game": 16.6,
+      "original": 18.1411,
+      "actual": 31.0,
+      "fitted": 18.5
+    },
+    {
+      "week": 6,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 5,
+      "prior_games": 5,
+      "history": 14.04,
+      "recent_weighted": 14.3538,
+      "recent_three": 16.2667,
+      "last_game": 18.2,
+      "original": 14.244,
+      "actual": 8.1,
+      "fitted": 14.04
+    },
+    {
+      "week": 6,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 5,
+      "prior_games": 5,
+      "history": 10.06,
+      "recent_weighted": 10.3394,
+      "recent_three": 8.1333,
+      "last_game": 14.7,
+      "original": 10.2416,
+      "actual": 1.8,
+      "fitted": 10.06
+    },
+    {
+      "week": 6,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 5,
+      "prior_games": 5,
+      "history": 8.34,
+      "recent_weighted": 8.972,
+      "recent_three": 10.1333,
+      "last_game": 6.0,
+      "original": 8.7508,
+      "actual": 6.5,
+      "fitted": 8.34
+    },
+    {
+      "week": 7,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 6,
+      "prior_games": 6,
+      "history": 20.5833,
+      "recent_weighted": 21.9174,
+      "recent_three": 21.5667,
+      "last_game": 31.0,
+      "original": 21.4505,
+      "actual": 12.8,
+      "fitted": 20.5833
+    },
+    {
+      "week": 7,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 6,
+      "prior_games": 6,
+      "history": 13.05,
+      "recent_weighted": 12.4518,
+      "recent_three": 9.1667,
+      "last_game": 8.1,
+      "original": 12.6612,
+      "actual": 5.9,
+      "fitted": 13.05
+    },
+    {
+      "week": 7,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 6,
+      "prior_games": 6,
+      "history": 8.0333,
+      "recent_weighted": 8.2202,
+      "recent_three": 10.7667,
+      "last_game": 6.5,
+      "original": 8.1548,
+      "actual": 7.2,
+      "fitted": 8.0333
+    },
+    {
+      "week": 7,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 6,
+      "prior_games": 6,
+      "history": 8.6833,
+      "recent_weighted": 7.7424,
+      "recent_three": 7.2,
+      "last_game": 1.8,
+      "original": 8.0717,
+      "actual": 16.8,
+      "fitted": 8.6833
+    },
+    {
+      "week": 8,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 7,
+      "prior_games": 7,
+      "history": 19.4714,
+      "recent_weighted": 19.4378,
+      "recent_three": 20.1333,
+      "last_game": 12.8,
+      "original": 19.4496,
+      "actual": 20.1,
+      "fitted": 19.4714
+    },
+    {
+      "week": 8,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 7,
+      "prior_games": 7,
+      "history": 9.8429,
+      "recent_weighted": 10.6617,
+      "recent_three": 11.1,
+      "last_game": 16.8,
+      "original": 10.3751,
+      "actual": 5.9,
+      "fitted": 9.8429
+    },
+    {
+      "week": 8,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 7,
+      "prior_games": 7,
+      "history": 7.9143,
+      "recent_weighted": 7.9272,
+      "recent_three": 6.5667,
+      "last_game": 7.2,
+      "original": 7.9227,
+      "actual": 24.1,
+      "fitted": 7.9143
+    },
+    {
+      "week": 9,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 8,
+      "prior_games": 8,
+      "history": 19.55,
+      "recent_weighted": 19.2732,
+      "recent_three": 21.3,
+      "last_game": 20.1,
+      "original": 19.37,
+      "actual": 16.6,
+      "fitted": 19.55
+    },
+    {
+      "week": 9,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 8,
+      "prior_games": 8,
+      "history": 9.9375,
+      "recent_weighted": 13.0909,
+      "recent_three": 12.6,
+      "last_game": 24.1,
+      "original": 11.9872,
+      "actual": 16.6,
+      "fitted": 9.9375
+    },
+    {
+      "week": 9,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 7,
+      "prior_games": 7,
+      "history": 12.0286,
+      "recent_weighted": 10.684,
+      "recent_three": 10.7333,
+      "last_game": 5.9,
+      "original": 11.1546,
+      "actual": 11.0,
+      "fitted": 12.0286
+    },
+    {
+      "week": 10,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 9,
+      "prior_games": 9,
+      "history": 19.2222,
+      "recent_weighted": 18.6319,
+      "recent_three": 16.5,
+      "last_game": 16.6,
+      "original": 18.8385,
+      "actual": 40.5,
+      "fitted": 19.2222
+    },
+    {
+      "week": 10,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 9,
+      "prior_games": 9,
+      "history": 10.6778,
+      "recent_weighted": 14.6177,
+      "recent_three": 15.9667,
+      "last_game": 16.6,
+      "original": 13.2387,
+      "actual": 3.8,
+      "fitted": 10.6778
+    },
+    {
+      "week": 10,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 9,
+      "prior_games": 8,
+      "history": 11.9,
+      "recent_weighted": 10.6493,
+      "recent_three": 8.3333,
+      "last_game": 11.0,
+      "original": 11.087,
+      "actual": 10.1,
+      "fitted": 11.9
+    },
+    {
+      "week": 11,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 10,
+      "prior_games": 10,
+      "history": 21.35,
+      "recent_weighted": 25.3655,
+      "recent_three": 25.7333,
+      "last_game": 40.5,
+      "original": 23.9601,
+      "actual": 21.5,
+      "fitted": 21.35
+    },
+    {
+      "week": 11,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 10,
+      "prior_games": 10,
+      "history": 9.99,
+      "recent_weighted": 11.0472,
+      "recent_three": 14.8333,
+      "last_game": 3.8,
+      "original": 10.6772,
+      "actual": 8.0,
+      "fitted": 9.99
+    },
+    {
+      "week": 11,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 10,
+      "prior_games": 9,
+      "history": 11.7,
+      "recent_weighted": 9.4673,
+      "recent_three": 9.0,
+      "last_game": 10.1,
+      "original": 10.2487,
+      "actual": 4.7,
+      "fitted": 11.7
+    },
+    {
+      "week": 12,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 11,
+      "prior_games": 10,
+      "history": 11.0,
+      "recent_weighted": 8.4649,
+      "recent_three": 8.6,
+      "last_game": 4.7,
+      "original": 9.3522,
+      "actual": 6.7,
+      "fitted": 11.0
+    },
+    {
+      "week": 13,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 11,
+      "prior_games": 11,
+      "history": 21.3636,
+      "recent_weighted": 24.6644,
+      "recent_three": 26.2,
+      "last_game": 21.5,
+      "original": 23.5091,
+      "actual": 19.4,
+      "fitted": 21.3636
+    },
+    {
+      "week": 13,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 11,
+      "prior_games": 11,
+      "history": 9.8091,
+      "recent_weighted": 10.3937,
+      "recent_three": 9.4667,
+      "last_game": 8.0,
+      "original": 10.1891,
+      "actual": 21.2,
+      "fitted": 9.8091
+    },
+    {
+      "week": 13,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 12,
+      "prior_games": 11,
+      "history": 10.6091,
+      "recent_weighted": 7.4012,
+      "recent_three": 7.1667,
+      "last_game": 6.7,
+      "original": 8.524,
+      "actual": 12.8,
+      "fitted": 10.6091
+    },
+    {
+      "week": 13,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 12,
+      "prior_games": 9,
+      "history": 8.5333,
+      "recent_weighted": 6.8416,
+      "recent_three": 8.2333,
+      "last_game": 2.0,
+      "original": 7.4337,
+      "actual": 11.0,
+      "fitted": 8.5333
+    },
+    {
+      "week": 14,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 13,
+      "prior_games": 12,
+      "history": 21.2,
+      "recent_weighted": 22.7204,
+      "recent_three": 27.1333,
+      "last_game": 19.4,
+      "original": 22.1883,
+      "actual": 17.5,
+      "fitted": 21.2
+    },
+    {
+      "week": 14,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 13,
+      "prior_games": 12,
+      "history": 10.7583,
+      "recent_weighted": 13.8909,
+      "recent_three": 11.0,
+      "last_game": 21.2,
+      "original": 12.7945,
+      "actual": 22.0,
+      "fitted": 10.7583
+    },
+    {
+      "week": 14,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 13,
+      "prior_games": 12,
+      "history": 10.7917,
+      "recent_weighted": 9.0053,
+      "recent_three": 8.0667,
+      "last_game": 12.8,
+      "original": 9.6305,
+      "actual": 14.3,
+      "fitted": 10.7917
+    },
+    {
+      "week": 15,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 14,
+      "prior_games": 13,
+      "history": 20.9154,
+      "recent_weighted": 21.6697,
+      "recent_three": 19.4667,
+      "last_game": 17.5,
+      "original": 21.4057,
+      "actual": 18.7,
+      "fitted": 20.9154
+    },
+    {
+      "week": 15,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 14,
+      "prior_games": 13,
+      "history": 11.6231,
+      "recent_weighted": 16.7193,
+      "recent_three": 17.0667,
+      "last_game": 22.0,
+      "original": 14.9356,
+      "actual": 10.5,
+      "fitted": 11.6231
+    },
+    {
+      "week": 15,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 14,
+      "prior_games": 13,
+      "history": 11.0615,
+      "recent_weighted": 10.7837,
+      "recent_three": 11.2667,
+      "last_game": 14.3,
+      "original": 10.8809,
+      "actual": 9.2,
+      "fitted": 11.0615
+    },
+    {
+      "week": 15,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 13,
+      "prior_games": 10,
+      "history": 8.78,
+      "recent_weighted": 8.2006,
+      "recent_three": 6.3,
+      "last_game": 11.0,
+      "original": 8.4034,
+      "actual": 10.7,
+      "fitted": 8.78
+    },
+    {
+      "week": 16,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 15,
+      "prior_games": 14,
+      "history": 20.7571,
+      "recent_weighted": 20.8515,
+      "recent_three": 18.5333,
+      "last_game": 18.7,
+      "original": 20.8185,
+      "actual": 18.0,
+      "fitted": 20.7571
+    },
+    {
+      "week": 16,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 15,
+      "prior_games": 14,
+      "history": 11.5429,
+      "recent_weighted": 14.4283,
+      "recent_three": 17.9,
+      "last_game": 10.5,
+      "original": 13.4184,
+      "actual": 22.1,
+      "fitted": 11.5429
+    },
+    {
+      "week": 16,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 15,
+      "prior_games": 14,
+      "history": 10.9286,
+      "recent_weighted": 10.2903,
+      "recent_three": 12.1,
+      "last_game": 9.2,
+      "original": 10.5137,
+      "actual": 1.4,
+      "fitted": 10.9286
+    },
+    {
+      "week": 16,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 15,
+      "prior_games": 11,
+      "history": 8.9545,
+      "recent_weighted": 8.6089,
+      "recent_three": 7.9,
+      "last_game": 10.7,
+      "original": 8.7299,
+      "actual": 17.8,
+      "fitted": 8.9545
+    },
+    {
+      "week": 17,
+      "id": "achane",
+      "name": "De'Von Achane",
+      "history_end": 16,
+      "prior_games": 15,
+      "history": 20.5733,
+      "recent_weighted": 20.2144,
+      "recent_three": 18.0667,
+      "last_game": 18.0,
+      "original": 20.34,
+      "actual": 14.2,
+      "fitted": 20.5733
+    },
+    {
+      "week": 17,
+      "id": "harvey",
+      "name": "RJ Harvey",
+      "history_end": 16,
+      "prior_games": 15,
+      "history": 12.2467,
+      "recent_weighted": 16.644,
+      "recent_three": 18.2,
+      "last_game": 22.1,
+      "original": 15.1049,
+      "actual": 18.6,
+      "fitted": 12.2467
+    },
+    {
+      "week": 17,
+      "id": "stevenson",
+      "name": "Rhamondre Stevenson",
+      "history_end": 16,
+      "prior_games": 12,
+      "history": 9.6917,
+      "recent_weighted": 11.7727,
+      "recent_three": 13.1667,
+      "last_game": 17.8,
+      "original": 11.0444,
+      "actual": 27.2,
+      "fitted": 9.6917
+    },
+    {
+      "week": 17,
+      "id": "montgomery",
+      "name": "David Montgomery",
+      "history_end": 16,
+      "prior_games": 15,
+      "history": 10.2933,
+      "recent_weighted": 7.5968,
+      "recent_three": 8.3,
+      "last_game": 1.4,
+      "original": 8.5406,
+      "actual": 6.0,
+      "fitted": 10.2933
+    }
+  ],
+  "omitted": [
+    {
+      "week": 8,
+      "id": "montgomery",
+      "reason": "Scheduled team bye"
+    },
+    {
+      "week": 9,
+      "id": "stevenson",
+      "reason": "No observed target; not scored as zero"
+    },
+    {
+      "week": 10,
+      "id": "stevenson",
+      "reason": "No observed target; not scored as zero"
+    },
+    {
+      "week": 11,
+      "id": "stevenson",
+      "reason": "History gap: verify availability"
+    },
+    {
+      "week": 12,
+      "id": "achane",
+      "reason": "Scheduled team bye"
+    },
+    {
+      "week": 12,
+      "id": "harvey",
+      "reason": "Scheduled team bye"
+    },
+    {
+      "week": 12,
+      "id": "stevenson",
+      "reason": "History gap: verify availability"
+    },
+    {
+      "week": 14,
+      "id": "stevenson",
+      "reason": "Scheduled team bye"
+    }
+  ],
+  "pair_case": {
+    "weeks": [
+      {
+        "week": 15,
+        "players": [
+          {
+            "week": 15,
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "history_end": 14,
+            "prior_games": 13,
+            "history": 11.0615,
+            "recent_weighted": 10.7837,
+            "recent_three": 11.2667,
+            "last_game": 14.3,
+            "original": 10.8809,
+            "actual": 9.2,
+            "fitted": 11.0615
+          },
+          {
+            "week": 15,
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "history_end": 13,
+            "prior_games": 10,
+            "history": 8.78,
+            "recent_weighted": 8.2006,
+            "recent_three": 6.3,
+            "last_game": 11.0,
+            "original": 8.4034,
+            "actual": 10.7,
+            "fitted": 8.78
+          }
+        ],
+        "decisions": {
+          "original": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 9.2,
+            "projection": 10.8809,
+            "regret_vs_hindsight": 1.5
+          },
+          "fitted": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 9.2,
+            "projection": 11.0615,
+            "regret_vs_hindsight": 1.5
+          },
+          "history": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 9.2,
+            "projection": 11.0615,
+            "regret_vs_hindsight": 1.5
+          },
+          "recent_three": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 9.2,
+            "projection": 11.2667,
+            "regret_vs_hindsight": 1.5
+          },
+          "last_game": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 9.2,
+            "projection": 14.3,
+            "regret_vs_hindsight": 1.5
+          }
+        }
+      },
+      {
+        "week": 16,
+        "players": [
+          {
+            "week": 16,
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "history_end": 15,
+            "prior_games": 14,
+            "history": 10.9286,
+            "recent_weighted": 10.2903,
+            "recent_three": 12.1,
+            "last_game": 9.2,
+            "original": 10.5137,
+            "actual": 1.4,
+            "fitted": 10.9286
+          },
+          {
+            "week": 16,
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "history_end": 15,
+            "prior_games": 11,
+            "history": 8.9545,
+            "recent_weighted": 8.6089,
+            "recent_three": 7.9,
+            "last_game": 10.7,
+            "original": 8.7299,
+            "actual": 17.8,
+            "fitted": 8.9545
+          }
+        ],
+        "decisions": {
+          "original": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 1.4,
+            "projection": 10.5137,
+            "regret_vs_hindsight": 16.4
+          },
+          "fitted": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 1.4,
+            "projection": 10.9286,
+            "regret_vs_hindsight": 16.4
+          },
+          "history": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 1.4,
+            "projection": 10.9286,
+            "regret_vs_hindsight": 16.4
+          },
+          "recent_three": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 1.4,
+            "projection": 12.1,
+            "regret_vs_hindsight": 16.4
+          },
+          "last_game": {
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "actual": 17.8,
+            "projection": 10.7,
+            "regret_vs_hindsight": 0.0
+          }
+        }
+      },
+      {
+        "week": 17,
+        "players": [
+          {
+            "week": 17,
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "history_end": 16,
+            "prior_games": 15,
+            "history": 10.2933,
+            "recent_weighted": 7.5968,
+            "recent_three": 8.3,
+            "last_game": 1.4,
+            "original": 8.5406,
+            "actual": 6.0,
+            "fitted": 10.2933
+          },
+          {
+            "week": 17,
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "history_end": 16,
+            "prior_games": 12,
+            "history": 9.6917,
+            "recent_weighted": 11.7727,
+            "recent_three": 13.1667,
+            "last_game": 17.8,
+            "original": 11.0444,
+            "actual": 27.2,
+            "fitted": 9.6917
+          }
+        ],
+        "decisions": {
+          "original": {
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "actual": 27.2,
+            "projection": 11.0444,
+            "regret_vs_hindsight": 0.0
+          },
+          "fitted": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 6.0,
+            "projection": 10.2933,
+            "regret_vs_hindsight": 21.2
+          },
+          "history": {
+            "id": "montgomery",
+            "name": "David Montgomery",
+            "actual": 6.0,
+            "projection": 10.2933,
+            "regret_vs_hindsight": 21.2
+          },
+          "recent_three": {
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "actual": 27.2,
+            "projection": 13.1667,
+            "regret_vs_hindsight": 0.0
+          },
+          "last_game": {
+            "id": "stevenson",
+            "name": "Rhamondre Stevenson",
+            "actual": 27.2,
+            "projection": 17.8,
+            "regret_vs_hindsight": 0.0
+          }
+        }
+      }
+    ],
+    "skipped": [],
+    "n": 3,
+    "totals": {
+      "original": 37.8,
+      "fitted": 16.6,
+      "history": 16.6,
+      "recent_three": 37.8,
+      "last_game": 54.2,
+      "always_montgomery": 16.6,
+      "always_stevenson": 55.7,
+      "hindsight_best": 55.7
+    },
+    "correct_weekly_choices": {
+      "original": 1,
+      "fitted": 0,
+      "history": 0,
+      "recent_three": 1,
+      "last_game": 2
+    },
+    "assumed_acquisition_week": 15,
+    "scope": "One hypothetical interchangeable RB/FLEX slot, not the full starting lineup.",
+    "baseline_note": "Always-start comparisons are descriptive controls, not claims they were the manager decisions. Hindsight best is unattainable advance knowledge."
+  },
+  "three_rb_case": [
+    {
+      "week": 15,
+      "status": "Restricted RB-only counterfactual",
+      "drafted_three_actual": 38.4,
+      "methods": {
+        "original": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 47.2222,
+          "actual": 38.4,
+          "delta_vs_drafted_three": 0.0
+        },
+        "fitted": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.6,
+          "actual": 38.4,
+          "delta_vs_drafted_three": 0.0
+        },
+        "history": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.6,
+          "actual": 38.4,
+          "delta_vs_drafted_three": 0.0
+        },
+        "recent_three": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 47.8001,
+          "actual": 38.4,
+          "delta_vs_drafted_three": 0.0
+        },
+        "last_game": {
+          "selected": [
+            "RJ Harvey",
+            "De'Von Achane",
+            "David Montgomery"
+          ],
+          "projected": 53.8,
+          "actual": 38.4,
+          "delta_vs_drafted_three": 0.0
+        }
+      }
+    },
+    {
+      "week": 16,
+      "status": "Restricted RB-only counterfactual",
+      "drafted_three_actual": 41.5,
+      "methods": {
+        "original": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 44.7506,
+          "actual": 41.5,
+          "delta_vs_drafted_three": 0.0
+        },
+        "fitted": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.2286,
+          "actual": 41.5,
+          "delta_vs_drafted_three": 0.0
+        },
+        "history": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.2286,
+          "actual": 41.5,
+          "delta_vs_drafted_three": 0.0
+        },
+        "recent_three": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 48.5333,
+          "actual": 41.5,
+          "delta_vs_drafted_three": 0.0
+        },
+        "last_game": {
+          "selected": [
+            "De'Von Achane",
+            "Rhamondre Stevenson",
+            "RJ Harvey"
+          ],
+          "projected": 39.9,
+          "actual": 57.9,
+          "delta_vs_drafted_three": 16.4
+        }
+      }
+    },
+    {
+      "week": 17,
+      "status": "Restricted RB-only counterfactual",
+      "drafted_three_actual": 38.8,
+      "methods": {
+        "original": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "Rhamondre Stevenson"
+          ],
+          "projected": 46.4893,
+          "actual": 60.0,
+          "delta_vs_drafted_three": 21.2
+        },
+        "fitted": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.1133,
+          "actual": 38.8,
+          "delta_vs_drafted_three": 0.0
+        },
+        "history": {
+          "selected": [
+            "De'Von Achane",
+            "RJ Harvey",
+            "David Montgomery"
+          ],
+          "projected": 43.1133,
+          "actual": 38.8,
+          "delta_vs_drafted_three": 0.0
+        },
+        "recent_three": {
+          "selected": [
+            "RJ Harvey",
+            "De'Von Achane",
+            "Rhamondre Stevenson"
+          ],
+          "projected": 49.4334,
+          "actual": 60.0,
+          "delta_vs_drafted_three": 21.2
+        },
+        "last_game": {
+          "selected": [
+            "RJ Harvey",
+            "De'Von Achane",
+            "Rhamondre Stevenson"
+          ],
+          "projected": 57.9,
+          "actual": 60.0,
+          "delta_vs_drafted_three": 21.2
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Only four RBs have statistical data here; all 17 drafted players plus the reported playoff addition are inventoried, not all evaluated.",
+    "Full PPR and weeks 15-17 are defaults, not confirmed league settings or playoff dates.",
+    "Stevenson ownership is assumed from the selected week; actual add/drop time and roster history were not supplied.",
+    "The coefficient is fitted on weeks 4-10 only. Evaluation uses weeks 11-17. The roster and study were chosen after knowing the championship outcome, so this is not untouched validation.",
+    "Latest published historical statistics are used; original injury, waiver, lineup, and publication-time feeds are not reconstructed.",
+    "Absent outcomes are excluded, not imputed as zero. Error metrics are conditional on observed player appearances, not the total cost of unavailable starts.",
+    "The pair comparison is not an optimization against WR/TE FLEX options and cannot establish an improvement over actual team decisions.",
+    "No model win probability, statistical significance, production advantage, or causal championship attribution is established."
+  ]
+}
