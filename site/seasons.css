@@ -30,7 +30,7 @@
 .fd-season-section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; margin-bottom: 26px; }
 .fd-season-section-head h2 { margin-top: 16px; }
 .fd-season-section-head > p { max-width: 350px; color: var(--muted); font-size: 13px; line-height: 1.75; padding-bottom: 2px; }
-.fd-season-decision { border-top: 1px solid var(--line); padding-top: 42px; scroll-margin-top: 22px; }
+.fd-season-decision { border-top: 1px solid var(--line); padding: 42px 0 50px; scroll-margin-top: 22px; }
 .fd-season-decision-controls { display: flex; align-items: center; gap: 20px; padding: 15px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 22px; }
 .fd-season-week-controls { display: flex; gap: 4px; }
 .fd-season-week-controls button, .fd-season-filters button { background: transparent; border: 1px solid transparent; padding: 10px 15px; border-radius: 5px; color: var(--muted); font-size: 12px; }
@@ -90,7 +90,7 @@
 .fd-season-small { font-size: 10px; line-height: 1.75; color: var(--muted); }
 .fd-season-all-weeks > .fd-season-small { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 13px; }
 .fd-season-muted { color: #959c91; font-size: 10px; }
-.fd-season-roster-section { padding: 60px 0 50px; }
+.fd-season-roster-section { padding: 42px 0 50px; border-top: 1px solid var(--line); scroll-margin-top: 20px; }
 .fd-season-roster-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
 .fd-season-filters { display: flex; flex-wrap: wrap; gap: 5px; }
 .fd-season-filters button { display: inline-flex; align-items: center; gap: 11px; border-color: var(--line); background: var(--paper); }
