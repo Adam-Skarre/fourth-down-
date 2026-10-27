@@ -10,6 +10,18 @@ Open the link in any browser. No installation, login, or download is required. C
 
 Hosted on **GitHub Pages**, with a custom JavaScript interface. This is an interactive historical-data dashboard, not a live NFL data feed. Streamlit is not required to view or use it.
 
+## My seasons
+
+**[2024 first season](https://adam-skarre.github.io/fourth-down-/#season-2024) · [2025 championship case](https://adam-skarre.github.io/fourth-down-/#seasons) · [2026 testing roster](https://adam-skarre.github.io/fourth-down-/#season-2026)**
+
+The season presentation connects the software to Adam's own fantasy-football rosters:
+
+- **2024:** the user-reported fourth-place finish and 16 visible entries from Adam's draft-board column, with NFL teams as shown at the draft. This introduces the keeper-league context: retain three players, but the same three-player group cannot remain unchanged. The source does not identify which players were keepers or establish detailed rotation rules.
+- **2025:** the recorded first-place finish, 17 drafted entries and reported Rhamondre Stevenson addition; full NFL team names; the three-week Stevenson/Montgomery comparison, with forecasts shown separately from outcomes; the original 65/35 method and its limits. This is a retrospective case, not evidence that the software caused the championship or informed the original decisions.
+- **2026:** a manually transcribed Week 7 snapshot supplied October 26, 2026: 10 starters, seven bench players and one IR-slot player. The screenshot values are the fantasy app's displayed scores and projections, not Fourth Down forecasts. In-progress, bye, bench and IR states remain explicit. This roster has different starting slots from the separate 2024 seven-slot optimizer.
+
+Source images are preserved in `site/assets/`; transcriptions are in `data/seasons/2024_draft.json` and `data/seasons/2026_week7.json`. Season years come from the user's supplied context. Generate the presentation data with `python -m scripts.build_seasons`; the normal `python -m scripts.build_site` command also runs this step.
+
 [Research implementation](fourth_down/research.py) · [Model results](reports/research.json) · [Data provenance](data/research/manifest.json)
 
 ## The question
