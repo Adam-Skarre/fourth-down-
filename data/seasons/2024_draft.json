@@ -1,0 +1,206 @@
+{
+  "season": 2024,
+  "team_name": "Adam",
+  "first_season": true,
+  "league_finish": 4,
+  "finish_source": "User-reported fourth-place finish; the draft-board photograph does not independently establish the season result.",
+  "source_type": "draft_board",
+  "source_asset": "site/assets/2024-draft-board.jpeg",
+  "source_files": [
+    "IMG_1742.jpeg"
+  ],
+  "source_notes": [
+    "Only the Adam column is transcribed. All 16 visible player or defense entries are included in top-to-bottom image order.",
+    "The user identifies this as the 2024 first season and reports a fourth-place finish. No win-loss record is supplied.",
+    "NFL affiliations and printed bye weeks are recorded as shown on the draft-board cards, not as current team information.",
+    "Gabe Davis's card uses JAC for Jacksonville. The team field normalizes this to JAX; team_at_draft preserves the printed JAC code.",
+    "The image is a draft inventory, not weekly lineup history or evidence of model use during the season. No keeper identities are marked or inferred."
+  ],
+  "keeper_rules": {
+    "source": "User-supplied league description",
+    "retained_players": 3,
+    "same_trio_must_change": true,
+    "description": "Keep three players, but cannot keep the same three-player group.",
+    "keeper_ids": null,
+    "rotation_mechanics": null,
+    "qualification": "The user has not specified the exact rotation mechanics or identified which players were kept."
+  },
+  "players": [
+    {
+      "player_id": "jamarr_chase",
+      "id": "jamarr_chase",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "team_name": "Cincinnati Bengals",
+      "team_at_draft": "CIN",
+      "row_order": 1,
+      "printed_bye": 12
+    },
+    {
+      "player_id": "devon_achane",
+      "id": "devon_achane",
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "MIA",
+      "team_name": "Miami Dolphins",
+      "team_at_draft": "MIA",
+      "row_order": 2,
+      "printed_bye": 6
+    },
+    {
+      "player_id": "patrick_mahomes",
+      "id": "patrick_mahomes",
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "team_name": "Kansas City Chiefs",
+      "team_at_draft": "KC",
+      "row_order": 3,
+      "printed_bye": 6
+    },
+    {
+      "player_id": "stefon_diggs",
+      "id": "stefon_diggs",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "HOU",
+      "team_name": "Houston Texans",
+      "team_at_draft": "HOU",
+      "row_order": 4,
+      "printed_bye": 14
+    },
+    {
+      "player_id": "mark_andrews",
+      "id": "mark_andrews",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "team_name": "Baltimore Ravens",
+      "team_at_draft": "BAL",
+      "row_order": 5,
+      "printed_bye": 14
+    },
+    {
+      "player_id": "najee_harris",
+      "id": "najee_harris",
+      "name": "Najee Harris",
+      "position": "RB",
+      "team": "PIT",
+      "team_name": "Pittsburgh Steelers",
+      "team_at_draft": "PIT",
+      "row_order": 6,
+      "printed_bye": 9
+    },
+    {
+      "player_id": "brandon_aubrey",
+      "id": "brandon_aubrey",
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "DAL",
+      "team_name": "Dallas Cowboys",
+      "team_at_draft": "DAL",
+      "row_order": 7,
+      "printed_bye": 7
+    },
+    {
+      "player_id": "new_york_jets_dst",
+      "id": "new_york_jets_dst",
+      "name": "New York Jets D/ST",
+      "position": "D/ST",
+      "team": "NYJ",
+      "team_name": "New York Jets",
+      "team_at_draft": "NYJ",
+      "row_order": 8,
+      "printed_bye": 12
+    },
+    {
+      "player_id": "jayden_reed",
+      "id": "jayden_reed",
+      "name": "Jayden Reed",
+      "position": "WR",
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "team_at_draft": "GB",
+      "row_order": 9,
+      "printed_bye": 10
+    },
+    {
+      "player_id": "deandre_hopkins",
+      "id": "deandre_hopkins",
+      "name": "DeAndre Hopkins",
+      "position": "WR",
+      "team": "TEN",
+      "team_name": "Tennessee Titans",
+      "team_at_draft": "TEN",
+      "row_order": 10,
+      "printed_bye": 5
+    },
+    {
+      "player_id": "brock_purdy",
+      "id": "brock_purdy",
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "team_name": "San Francisco 49ers",
+      "team_at_draft": "SF",
+      "row_order": 11,
+      "printed_bye": 9
+    },
+    {
+      "player_id": "alexander_mattison",
+      "id": "alexander_mattison",
+      "name": "Alexander Mattison",
+      "position": "RB",
+      "team": "LV",
+      "team_name": "Las Vegas Raiders",
+      "team_at_draft": "LV",
+      "row_order": 12,
+      "printed_bye": 10
+    },
+    {
+      "player_id": "joshua_palmer",
+      "id": "joshua_palmer",
+      "name": "Joshua Palmer",
+      "position": "WR",
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "team_at_draft": "LAC",
+      "row_order": 13,
+      "printed_bye": 5
+    },
+    {
+      "player_id": "gabe_davis",
+      "id": "gabe_davis",
+      "name": "Gabe Davis",
+      "position": "WR",
+      "team": "JAX",
+      "team_name": "Jacksonville Jaguars",
+      "team_at_draft": "JAC",
+      "row_order": 14,
+      "printed_bye": 12
+    },
+    {
+      "player_id": "xavier_legette",
+      "id": "xavier_legette",
+      "name": "Xavier Legette",
+      "position": "WR",
+      "team": "CAR",
+      "team_name": "Carolina Panthers",
+      "team_at_draft": "CAR",
+      "row_order": 15,
+      "printed_bye": 11
+    },
+    {
+      "player_id": "khalil_herbert",
+      "id": "khalil_herbert",
+      "name": "Khalil Herbert",
+      "position": "RB",
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "team_at_draft": "CHI",
+      "row_order": 16,
+      "printed_bye": 7
+    }
+  ]
+}
